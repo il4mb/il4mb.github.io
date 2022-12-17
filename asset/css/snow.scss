@@ -1,4 +1,4 @@
-$d: 70;      // density
+$d: 20;      // density
 $w: 600;     // grid size
 $s: 5s;       // speed
 
@@ -18,7 +18,7 @@ $grad: ();
 
 // The CSS
 body {
-  background: linear-gradient(#123 30%, #667);
+    background: linear-gradient(#02101f 30%, #667);
 }
 .snow, .snow:before, .snow:after {
   position: fixed;
