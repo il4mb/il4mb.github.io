@@ -26,8 +26,67 @@ img {
   width: 100%;
 }
 .welcome-screen > .floating-center {
+  width: 100%;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.lines {
+  margin-bottom: 50px;
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+.lines::before {
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: white;
+}
+.lines > *:last-child {
+  font-size: 25px;
+  border: none !important;
+  max-width: unset !important;
+  width: 100% !important;
+  text-align: center !important;
+  position: absolute;
+}
+.lines > *:last-child::after {
+  content: none !important;
+}
+.lines > *:nth-child(2n+2) {
+  text-align: left;
+  margin-left: auto;
+  border-right: none;
+}
+.lines > *:nth-child(2n+2)::after {
+  content: "";
+  position: absolute;
+  left: calc(0% - 12.1951219512px);
+  right: unset;
+}
+.lines > * {
+  padding: 10px 20px;
+  text-align: right;
+  max-width: 50%;
+  border-left: none;
+  position: relative;
+  padding-bottom: 50px;
+}
+.lines > *::after {
+  border-radius: 50px;
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: calc(0% - 12.1951219512px);
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  background: white;
 }/*# sourceMappingURL=style.css.map */

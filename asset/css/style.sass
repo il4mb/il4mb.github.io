@@ -36,7 +36,69 @@ img
     height: 90vh
     width: 100%
     &>.floating-center
+        width: 100%
         position: absolute
         left: 50%
         top: 50%
         transform: translate(-50%, -50%)
+
+.lines
+    margin-bottom: 50px
+    $LineColor: white
+    $sizeBullet: 25px
+    $lineSize: 2px
+    color: white
+    font-weight: bold
+    position: relative
+
+    &::before
+        top: 20px
+        left: 50%
+        transform: translateX(-50%)
+        content: ''
+        position: absolute
+        width: $lineSize
+        height: 100%
+        background: $LineColor
+
+    &> *:last-child
+        font-size: 25px
+        border: none !important
+        max-width: unset !important
+        width: 100% !important
+        text-align: center !important
+        position: absolute
+
+        &::after
+            content: none !important
+
+    &> *:nth-child(2n+2)
+        text-align: left
+        margin-left: auto
+        border-right: none
+        &::after
+            content: ''
+            position: absolute
+            left: calc( 0% - calc( $sizeBullet/2.05 ) )
+            right: unset
+
+    &>*
+        padding: 10px 20px
+        text-align: right
+        max-width: 50%
+        border-left: none
+        position: relative
+        padding-bottom: 50px
+
+        &::after
+
+            border-radius: 50px
+            content: ''
+            position: absolute
+            top: 20px
+            right: calc( 0% - calc( $sizeBullet/2.05 ) )
+            transform: translateY(-50%)
+
+            width: $sizeBullet
+            height: $sizeBullet
+            background: $LineColor
