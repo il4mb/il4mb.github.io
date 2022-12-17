@@ -1,6 +1,7 @@
 @import url("./snow.css");
 body {
   color: white;
+  background: linear-gradient(#02101f 30%, #667);
 }
 
 .book {
