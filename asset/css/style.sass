@@ -1,4 +1,3 @@
-@import url("./snow.css")
 
 @function boxShadow($color)
     $boxShadow: null
@@ -43,7 +42,7 @@ img
         top: 50%
         transform: translate(-50%, -50%)
 
-.lines
+.list
     $LineColor: white
     $sizeBullet: 15px
     $lineSize: 1px
@@ -85,7 +84,7 @@ img
             right: unset
 
     &>*
-        padding: 10px 20px
+        padding: 5px 20px
         text-align: right
         max-width: 50%
         border-left: none
@@ -104,3 +103,20 @@ img
             width: $sizeBullet
             height: $sizeBullet
             background: $LineColor
+
+$position: top, right, bottom, left
+
+@each $var in $position
+    .#{$var}
+        #{$var}: 0
+
+.fixed
+    position: fixed
+
+.above 
+    z-index: 99
+
+.flag
+    width: 25px
+    height: auto
+    object-fit: contain

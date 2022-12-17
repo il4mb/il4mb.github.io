@@ -43,9 +43,11 @@ class NewDOM {
         this.a.setInner = (c) => {
 
             switch (typeof c) {
+                
                 case 'function':
-                    this.a.innerHTML = null
-                    this.a.append(c(a))
+                    
+                    this.a.innerHTML = null;
+                    this.a.append(c(this.a));
                     break;
 
                 case 'boolean':
@@ -61,7 +63,7 @@ class NewDOM {
                         });
                     } else {
 
-                        this.a.append(c);
+                        this.a.append(c.valueOf());
                     }
                     break;
 
@@ -112,7 +114,7 @@ class NewDOM {
         };
 
         if (inner) this.a.setInner(inner);
-        if (todo) todo(a);
+        if (todo) todo(this.a);
 
         return this;
     }
