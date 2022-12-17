@@ -63,6 +63,15 @@ window.addEventListener('load', () => {
                                     DOM('i', {
                                         inner: " &#8212; Technical Information"
                                     })
+                            }) +
+                            "![n]" +  "![n]" +
+                            DOM("a", {
+                                attr: { href: "https://github.com/ilh4mb/" },
+                                inner: [
+                                    DOM("img", {
+                                        attr: { width: "100", class: "me-2", src: "https://img.shields.io/badge/-ilh4mb-1db87c?style=for-the-badge&logo=github&logoColor=white&labelColor=3776AB" }
+                                    })
+                                ]
                             })
                         //<i class="fa-solid fa-laptop-code"></i>
                     }),
