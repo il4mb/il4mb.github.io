@@ -1,0 +1,33 @@
+body {
+  color: white;
+  background: black;
+}
+
+.book {
+  max-width: 600px;
+  width: 100%;
+  min-height: 200px;
+  margin: 0 auto;
+  background: orange;
+  box-shadow: 8px 5px #e09100, 16px 10px #c27d00, 24px 15px #a36a00;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 400px !important;
+  width: 100%;
+}
+
+.welcome-screen {
+  position: relative;
+  text-align: center;
+  height: 90vh;
+  width: 100%;
+}
+.welcome-screen > .floating-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=style.css.map */

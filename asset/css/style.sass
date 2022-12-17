@@ -1,0 +1,42 @@
+
+@function boxShadow($color)
+    $boxShadow: null
+    $layer: 3
+    @for $var from 1 through $layer
+        $comma: ','
+        $newColor: darken($color, $var *6)
+
+        @if $var == $layer
+            $comma: ''
+
+        $boxShadow: append($boxShadow, (8px * $var) (5px * $var) #{$newColor} + $comma)
+
+    @return $boxShadow
+
+body
+    color: white
+    background: black
+.book
+    $boxColor: orange
+    max-width: 600px
+    width: 100%
+    min-height: 200px
+    margin: 0 auto
+    background: $boxColor
+    box-shadow: boxShadow($boxColor)
+
+img
+    object-fit: cover
+    max-width: 400px !important
+    width: 100%
+
+.welcome-screen
+    position: relative
+    text-align: center
+    height: 90vh
+    width: 100%
+    &>.floating-center
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
