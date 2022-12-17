@@ -1,3 +1,4 @@
+@import url("./snow.css")
 
 @function boxShadow($color)
     $boxShadow: null
@@ -15,20 +16,19 @@
 
 body
     color: white
-    background: black
 .book
-    $boxColor: orange
-    max-width: 600px
-    width: 100%
-    min-height: 200px
-    margin: 0 auto
+    $boxColor: #ffac02
+
+    padding: 15px
+    max-width: 400px
+    width: 90%
+    margin: 12.5px
     background: $boxColor
     box-shadow: boxShadow($boxColor)
 
 img
     object-fit: cover
     max-width: 400px !important
-    width: 100%
 
 .welcome-screen
     position: relative
@@ -43,10 +43,12 @@ img
         transform: translate(-50%, -50%)
 
 .lines
-    margin-bottom: 50px
+    
     $LineColor: white
-    $sizeBullet: 25px
-    $lineSize: 2px
+    $sizeBullet: 15px
+    $lineSize: 1px
+
+    margin-bottom: 50px
     color: white
     font-weight: bold
     position: relative
@@ -88,7 +90,7 @@ img
         max-width: 50%
         border-left: none
         position: relative
-        padding-bottom: 50px
+        padding-bottom: 5px
 
         &::after
 

@@ -26,6 +26,7 @@ window.addEventListener('load', () => {
                 ]
             }),
 
+            // INTRODUCE
             DOM("div", {
                 attr: {},
                 inner: [
@@ -37,7 +38,7 @@ window.addEventListener('load', () => {
                         attr: { class: "ms-3" },
                         inner: "MY NAME IS " +
                             DOM("span", {
-                                attr: { class: "fw-bold text-warning" },
+                                attr: { class: "fw-bold text-primary" },
                                 inner: "ILHAM B"
                             }) +
 
@@ -47,7 +48,7 @@ window.addEventListener('load', () => {
                             }) +
                             " IM STUDENT OF " +
                             DOM("span", {
-                                attr: { class: "fw-bold text-warning" },
+                                attr: { class: "fw-bold text-primary" },
                                 inner: 'STMIK AMIK RIAU'
                             }) +
 
@@ -57,7 +58,7 @@ window.addEventListener('load', () => {
                             }) +
                             " MAJORING " +
                             DOM("span", {
-                                attr: { class: "fw-bold text-warning" },
+                                attr: { class: "fw-bold text-primary" },
                                 inner: 'TEKNIK INFORMATIKA' +
                                     DOM('i', {
                                         inner: " &#8212; Technical Information"
@@ -69,26 +70,96 @@ window.addEventListener('load', () => {
             }),
 
             DOM("h5", {
-                attr: {class: "text-center mt-5 mb-5"},
+                attr: { class: "text-center text-warning mt-5 mb-5 pb-5 pt-5" },
                 inner: "I am a full-stack web developer and mobile developer"
             }),
 
+            // CURENT PROJECT
             DOM("div", {
+                attr: { class: "mt-5 mb-5 pb-5 pt-5" },
+                inner: [
+                    DOM("h4", {
+                        inner: "MY LAST PROJECT"
+                    }),
+
+                    DOM('div', {
+                        attr: { class: "row p-3 m-auto", style: "width: fit-content"},
+                        inner: [
+
+                            DOM("div", {
+                                attr: { class: "col-sm book" },
+                                inner: [
+                                    DOM("img", {
+                                        attr: { width: "150px", src: "https://img.shields.io/badge/OPEN-BINARY-red?style=for-the-badge&&logoColor=black&labelColor=blue" }
+                                    }),
+                                    DOM("p", {
+                                        attr: { class: "mt-3" },
+                                        inner: "Open Binary has a simple code to add and subtract binary numbers" +
+                                            "![n]" +
+                                            DOM("a", {
+                                                attr: { href: "https://ilh4mb.github.io/Open-Binary/" },
+                                                inner: [
+                                                    DOM("img", {
+                                                        attr: { class: "me-2", src: "https://img.shields.io/badge/-CalculatorBinary-brightgreen" }
+                                                    })
+                                                ]
+                                            }) +
+                                            DOM("a", {
+                                                attr: { href: "https://github.com/ilh4mb/Open-Binary/" },
+                                                inner: [
+                                                    DOM("img", {
+                                                        attr: { class: "me-2", src: "https://img.shields.io/badge/-Repository-1db87c?logo=github&logoColor=white&labelColor=3776AB" }
+                                                    })
+                                                ]
+                                            })
+                                    })
+                                ]
+                            }),
+
+                            DOM("div", {
+                                attr: { class: "col-sm book" },
+                                inner: [
+                                    DOM("img", {
+                                        attr: { width: "50px", height: "50px", src: "./asset/vector/Marapi-square-logo-nontext.png" }
+                                    }),
+                                    DOM("p", {
+                                        attr: { class: "mt-3" },
+                                        inner: "Marapi is a CMS <i>(Content Management System)</i>" +
+                                            "![n]" +
+                                            DOM("a", {
+                                                attr: { href: "https://github.com/ilh4mb/Marapi-CMS/" },
+                                                inner: [
+                                                    DOM("img", {
+                                                        attr: { class: "me-2", src: "https://img.shields.io/badge/-Repository-1db87c?logo=github&logoColor=white&labelColor=3776AB" }
+                                                    })
+                                                ]
+                                            })
+                                    })
+                                ]
+                            })
+                        ]
+                    })
+                ]
+            }),
+
+            // STORY LINE
+            DOM("div", {
+                attr : {class: "mt-5 mb-5 pb-5 pt-5"},
                 inner: [
                     DOM('h4', {
                         inner: "MY STORY LINE"
                     }),
 
                     DOM("div", {
-                        attr : {class: 'lines'},
+                        attr: { class: 'lines' },
                         inner: [
 
                             DOM("p", {
-                                inner : "Born in Pekanbaru 1998"
+                                inner: "Born in Pekanbaru 1998"
                             }),
 
                             DOM("p", {
-                                inner : "Move to Sumatera Barat 2002"
+                                inner: "Move to Sumatera Barat 2002"
                             }),
 
                             DOM('p', {
@@ -100,11 +171,11 @@ window.addEventListener('load', () => {
                             }),
 
                             DOM("p", {
-                                inner : "Passed elementry school in 2012 at sumatera barat"
+                                inner: "Passed elementry school in 2012 at sumatera barat"
                             }),
-                            
+
                             DOM("p", {
-                                inner : "Do not continue school and work at a young age in Jakarta in 2022"
+                                inner: "Do not continue school and work at a young age in Jakarta in 2022"
                             }),
 
                             DOM('p', {
@@ -138,7 +209,7 @@ window.addEventListener('load', () => {
                             DOM('p', {
                                 inner: "2019 Started working as a CIMB Niaga ATM operator under the auspices of PT. MKMA"
                             }),
-                            
+
                             DOM('p', {
                                 inner: "2019 Continuing my education to high school, being a student while being a worker"
                             }),

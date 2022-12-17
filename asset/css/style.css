@@ -1,22 +1,21 @@
+@import url("./snow.css");
 body {
   color: white;
-  background: black;
 }
 
 .book {
-  max-width: 600px;
-  width: 100%;
-  min-height: 200px;
-  margin: 0 auto;
-  background: orange;
-  box-shadow: 8px 5px #e09100, 16px 10px #c27d00, 24px 15px #a36a00;
+  padding: 15px;
+  max-width: 400px;
+  width: 90%;
+  margin: 12.5px;
+  background: #ffac02;
+  box-shadow: 8px 5px #e29800, 16px 10px #c48400, 24px 15px #a56f00;
 }
 
 img {
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 400px !important;
-  width: 100%;
 }
 
 .welcome-screen {
@@ -45,7 +44,7 @@ img {
   transform: translateX(-50%);
   content: "";
   position: absolute;
-  width: 2px;
+  width: 1px;
   height: 100%;
   background: white;
 }
@@ -68,7 +67,7 @@ img {
 .lines > *:nth-child(2n+2)::after {
   content: "";
   position: absolute;
-  left: calc(0% - 12.1951219512px);
+  left: calc(0% - 7.3170731707px);
   right: unset;
 }
 .lines > * {
@@ -77,16 +76,16 @@ img {
   max-width: 50%;
   border-left: none;
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 5px;
 }
 .lines > *::after {
   border-radius: 50px;
   content: "";
   position: absolute;
   top: 20px;
-  right: calc(0% - 12.1951219512px);
+  right: calc(0% - 7.3170731707px);
   transform: translateY(-50%);
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
   background: white;
 }/*# sourceMappingURL=style.css.map */
