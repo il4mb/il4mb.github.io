@@ -121,3 +121,25 @@ $position: top, right, bottom, left
     height: auto
     object-fit: contain
     box-shadow: -1px 1px 1px 0px #d8d8d8
+
+.mToast
+    background: #9bd2ff
+    color: #005fad
+
+    padding: 5px 25px
+
+    transition: .5s
+    position: fixed
+    top: -50px
+    left: 50%
+    transform: translateX(-50%)
+    width: max-content
+
+    border-radius: 5px
+
+    z-index: 999
+
+    &.show 
+        top: 15px
+    &.close
+        top: -50px

@@ -649,7 +649,8 @@ window.addEventListener('load', () => {
                         todo: E => {
                             E.addEventListener('click', () => {
                                 Lang.setLang('en').render();
-                            })
+                                toast("English");
+                            });
                         }
                     }),
 
@@ -662,6 +663,7 @@ window.addEventListener('load', () => {
                         todo: E => {
                             E.addEventListener('click', () => {
                                 Lang.setLang('id').render();
+                                toast("Indonesia");
                             });
                         }
                     }),
@@ -675,6 +677,7 @@ window.addEventListener('load', () => {
                         todo: E => {
                             E.addEventListener('click', () => {
                                 Lang.setLang('mng').render();
+                                toast("Minang");
                             });
                         }
                     })
@@ -686,3 +689,28 @@ window.addEventListener('load', () => {
     document.body.prepend(book.valueOf());
 
 });
+
+function toast(text) {
+
+    let toast = (DOM("div", {
+        attr: { class: "mToast" },
+        inner: text
+    })).valueOf();
+
+    document.body.append(toast);
+
+    setTimeout(() => {
+
+        toast.classList.add('show');
+
+        setTimeout(() => {
+            toast.classList.remove("show");
+            toast.classList.add("close");
+
+            setTimeout(() => toast.remove(), 500);
+        }, 3000);
+
+    }, 100);
+
+
+}
