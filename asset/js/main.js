@@ -501,18 +501,18 @@ window.addEventListener('load', () => {
                             DOM('p', {
                                 inner: E => {
 
-                                    Lang.addString('s-18')
+                                    Lang.addString('s-19')
                                         .setValue('en', "Learn python in college 2022")
                                         .setValue('id', "Belajar python di kampus 2022");
-                                    return Lang.getString(E, 's-18');
+                                    return Lang.getString(E, 's-19');
                                 }
                             }),
                             DOM('p', {
                                 inner: E => {
-                                    Lang.addString('s-19')
+                                    Lang.addString('s-20')
                                         .setValue('en', "until now")
                                         .setValue('id', "sampai sekarang");
-                                    return Lang.getString(E, 's-19');
+                                    return Lang.getString(E, 's-20');
                                 }
                             }),
                         ]
