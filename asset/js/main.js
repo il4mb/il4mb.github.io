@@ -19,7 +19,7 @@ import { Language } from "./language.js";
 window.addEventListener('load', () => {
 
     let Lang = new Language('en', 'id', 'mng');
-    Lang.setLang('mng');
+    Lang.setLang('en');
 
 
     (() => {
