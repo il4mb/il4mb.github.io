@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200mm"
+   height="200mm"
+   viewBox="0 0 200 200"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.52284039"
+     inkscape:cx="404.52116"
+     inkscape:cy="473.37582"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-9.6148183,-26.721753)">
+    <path
+       id="rect950"
+       style="fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.906762;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M 38.09484,63.229222 V 186.91483 H 63.023468 V 63.229222 Z m 34.25271,0 V 186.91483 h 24.928628 v -0.034 H 152.05061 V 163.09624 H 97.276178 V 63.229222 Z m 34.70963,0 v 89.469128 h 20.30483 v -0.0405 h 27.39427 v 0.0405 h 10.98115 l 14.05139,-11.80192 v -27.59305 h 0.088 l -12.25304,-8.81962 7.5253,-6.092096 h -0.088 V 76.599216 L 158.25507,63.229222 h -30.89306 z m 20.30483,14.911653 h 22.79621 l 4.59806,3.736968 v 14.064126 l -3.66496,2.449695 h -23.72931 z m 0,35.162505 h 27.57892 l 4.5431,3.33685 v 18.15093 l -3.66497,2.95505 h -28.45705 z" />
+    <path
+       id="rect950-4"
+       style="display:none;fill:#9955ff;fill-opacity:1;stroke:none;stroke-width:1.09545;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M 29.053892,45.439802 V 195.43995 h 30.00023 V 45.439802 Z m 41.221252,0 V 195.43995 h 30.000236 v -0.0413 h 65.91794 v -28.8448 H 100.27538 V 45.439802 Z m 41.771096,0 V 153.94377 h 24.43571 v -0.0491 h 32.9675 v 0.0491 h 13.21521 l 16.91008,-14.31282 v -33.46359 h 0.10594 l -14.74587,-10.695988 9.05629,-7.38818 h -0.10593 v -26.42888 l -20.22512,-16.21451 h -37.1781 z m 24.43571,18.08417 h 27.43399 l 5.53351,4.53202 v 17.05632 l -4.41058,2.97088 h -28.55692 z m 0,42.643388 h 33.18971 l 5.46737,4.04678 v 22.01261 l -4.41059,3.58376 h -34.24649 z" />
+  </g>
+</svg>
