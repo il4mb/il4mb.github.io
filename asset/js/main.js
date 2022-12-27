@@ -254,13 +254,14 @@ window.addEventListener('load', () => {
                             DOM("br"), DOM("br"),
 
                             DOM("a", {
-                                attr: { href: "https://github.com/ilh4mb/" },
+                                attr: { href: "https://github.com/il4mb/" },
                                 inner: [
                                     DOM("img", {
                                         attr: { width: "100", class: "me-2", src: "https://img.shields.io/badge/-ilh4mb-1db87c?style=for-the-badge&logo=github&logoColor=white&labelColor=3776AB" }
                                     })
                                 ]
-                            })
+                            }),
+
                         ]
                     }),
                 ]
@@ -403,7 +404,7 @@ window.addEventListener('load', () => {
                                             }),
                                             DOM("br"),
                                             DOM("a", {
-                                                attr: { href: "https://ilh4mb.github.io/Open-Binary/" },
+                                                attr: { href: "https://il4mb.github.io/Open-Binary/" },
                                                 inner: [
                                                     DOM("img", {
                                                         attr: { class: "me-2", src: "https://img.shields.io/badge/-CalculatorBinary-brightgreen" }
@@ -411,7 +412,7 @@ window.addEventListener('load', () => {
                                                 ]
                                             }),
                                             DOM("a", {
-                                                attr: { href: "https://github.com/ilh4mb/Open-Binary/" },
+                                                attr: { href: "https://github.com/il4mb/Open-Binary/" },
                                                 inner: [
                                                     DOM("img", {
                                                         attr: { class: "me-2", src: "https://img.shields.io/badge/-Repository-1db87c?logo=github&logoColor=white&labelColor=3776AB" }
@@ -443,7 +444,7 @@ window.addEventListener('load', () => {
 
                                             DOM('br'),
                                             DOM("a", {
-                                                attr: { href: "https://github.com/ilh4mb/Marapi-CMS/" },
+                                                attr: { href: "https://github.com/il4mb/Marapi-CMS/" },
                                                 inner: [
                                                     DOM("img", {
                                                         attr: { class: "me-2", src: "https://img.shields.io/badge/-Repository-1db87c?logo=github&logoColor=white&labelColor=3776AB" }
