@@ -62,6 +62,8 @@ export class Language {
 
         this.lang = lang;
 
+        document.documentElement.setAttribute("lang", lang);
+
         return {
 
             render: () => {
