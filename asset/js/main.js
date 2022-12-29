@@ -180,6 +180,10 @@ window.addEventListener('load', () => {
         attr: { class: "container-sm" },
         inner: [
 
+            DOM("img", {
+                attr : {class: "logo", src: "./asset/vector/ILB-nobg.svg"}
+            }),
+
             DOM('div', {
                 attr: { class: "welcome-screen" },
                 inner: [

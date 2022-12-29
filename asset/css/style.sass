@@ -29,6 +29,15 @@ body
 img
     object-fit: cover
     max-width: 400px !important
+    &.logo
+        position: fixed
+        top: 10px
+        left: 20px
+        width: 100px
+        height: 100px
+        aspect-ratio: 1
+        filter: drop-shadow(0px 0px 4px #dddddd)
+        z-index: 9999999
 
 .welcome-screen
     position: relative
@@ -113,7 +122,7 @@ $position: top, right, bottom, left
 .fixed
     position: fixed
 
-.above 
+.above
     z-index: 99
 
 .flag
@@ -139,7 +148,7 @@ $position: top, right, bottom, left
 
     z-index: 999
 
-    &.show 
+    &.show
         top: 15px
     &.close
         top: -50px
