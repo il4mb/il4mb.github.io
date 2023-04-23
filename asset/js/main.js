@@ -410,6 +410,41 @@ window.addEventListener('load', () => {
                                 attr: { class: "col-sm book" },
                                 inner: [
                                     DOM("img", {
+                                        attr: { width: "50px", height: "50px", src: "./asset/vector/logopix.png" }
+                                    }),
+                                    DOM("p", {
+                                        attr: { class: "mt-3" },
+                                        inner: [
+
+                                            DOM("span", {
+                                                inner: (E) => {
+
+                                                    Lang.addString("marapi-desc")
+                                                        .setValue("Interactive Logo, Animation of the balls from the photo")
+                                                        .setValue("Logo Interaktif, Animasi bola dari foto")
+                                                        .setValue("Logo Interaktif, Animasi bola daghi poto");
+                                                    return Lang.getString(E, 'marapi-desc');
+                                                }
+                                            }),
+
+                                            DOM('br'),
+                                            DOM("a", {
+                                                attr: { href: "https://github.com/il4mb/LogoPix/" },
+                                                inner: [
+                                                    DOM("img", {
+                                                        attr: { class: "me-2", src: "https://img.shields.io/badge/-Repository-1db87c?logo=github&logoColor=white&labelColor=3776AB" }
+                                                    })
+                                                ]
+                                            })
+                                        ]
+                                    })
+                                ]
+                            }),
+
+                            DOM("div", {
+                                attr: { class: "col-sm book" },
+                                inner: [
+                                    DOM("img", {
                                         attr: { width: "150px", src: "https://img.shields.io/badge/OPEN-BINARY-red?style=for-the-badge&&logoColor=black&labelColor=blue" }
                                     }),
                                     DOM("p", {
