@@ -419,11 +419,11 @@ window.addEventListener('load', () => {
                                             DOM("span", {
                                                 inner: (E) => {
 
-                                                    Lang.addString("marapi-desc")
+                                                    Lang.addString("logopic-desc")
                                                         .setValue("Interactive Logo, Animation of the balls from the photo")
                                                         .setValue("Logo Interaktif, Animasi bola dari foto")
                                                         .setValue("Logo Interaktif, Animasi bola daghi poto");
-                                                    return Lang.getString(E, 'marapi-desc');
+                                                    return Lang.getString(E, 'logopic-desc');
                                                 }
                                             }),
 
