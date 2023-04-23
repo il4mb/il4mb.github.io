@@ -43,8 +43,6 @@ function LogoPix(src) {
             y: Y,
             size: 35,
         }
-
-        console.log(mouse)
     });
     canvas.addEventListener("mouseleave", () => {
         mouse = null;
