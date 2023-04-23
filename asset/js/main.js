@@ -180,9 +180,24 @@ window.addEventListener('load', () => {
         attr: { class: "container-sm" },
         inner: [
 
-            DOM("img", {
-                attr : {class: "logo", src: "./asset/vector/ILB-nobg.svg"}
+            DOM("div", {
+                attr: { class: "logo" },
+                todo: (el) => {
+
+                    let logoPix = LogoPix("./asset/vector/ILB-nobg.svg");
+                    let builder = logoPix.builder();
+
+                    builder.setAlpha("#000000")
+                        .setStrokeColor("transparent");
+
+                    logoPix.draw(el);
+
+                    builder.setHeight(100)
+                }
             }),
+            /* DOM("img", {
+                 attr: { class: "logo", src: "./asset/vector/ILB-nobg.svg" }
+             }),*/
 
             DOM('div', {
                 attr: { class: "welcome-screen" },
