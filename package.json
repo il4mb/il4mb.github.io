@@ -1,0 +1,34 @@
+{
+  "name": "il4mb.github.io",
+  "version": "1.0.0",
+  "description": "My static portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/il4mb/il4mb.github.io.git"
+  },
+  "keywords": [
+    "il4mb",
+    "portfolio"
+  ],
+  "author": "ilham B",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/il4mb/il4mb.github.io/issues"
+  },
+  "homepage": "https://github.com/il4mb/il4mb.github.io#readme",
+  "devDependencies": {
+    "@parcel/transformer-vue": "2.9.3",
+    "parcel": "^2.9.3",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.3.3",
+    "vue": "^3.3.4",
+    "vue-router": "4"
+  }
+}
