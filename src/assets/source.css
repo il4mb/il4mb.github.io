@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --object-open-bracket: url("data:image/svg+xml,%3Csvg viewBox='0 0 4.238 11.963' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m1.114 6.063v-0.163c1.005-0.102 1.497-0.615 1.497-1.6v-1.797c0-1.094 0.39-1.538 1.354-1.538h0.273v-0.965h-0.376c-1.612 0-2.372 0.759-2.372 2.352v1.524c0 1.094-0.376 1.456-1.49 1.456v1.299c1.114 0 1.49 0.362 1.49 1.456v1.524c0 1.593 0.759 2.352 2.372 2.352h0.376v-0.964h-0.273c-0.964 0-1.354-0.444-1.354-1.538v-1.798c0-0.984-0.492-1.497-1.497-1.6z'/%3E%3C/svg%3E%0A");
+    --object-close-bracket: url("data:image/svg+xml,%3Csvg viewBox='0 0 4.238 11.963' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m3.124 5.9v0.163c-1.005 0.103-1.497 0.616-1.497 1.6v1.798c0 1.094-0.39 1.538-1.354 1.538h-0.273v0.964h0.376c1.613 0 2.372-0.759 2.372-2.352v-1.524c0-1.094 0.376-1.456 1.49-1.456v-1.299c-1.114 0-1.49-0.362-1.49-1.456v-1.524c0-1.593-0.76-2.352-2.372-2.352h-0.376v0.964h0.273c0.964 0 1.354 0.444 1.354 1.538v1.798c0 0.984 0.492 1.497 1.497 1.6z'/%3E%3C/svg%3E%0A");
+}
+
 @layer base {
     html {
         @apply font-notojp;
@@ -19,7 +24,122 @@
     background-position: center;
 }
 
-*, html {
+.json {
+    @apply font-notojp relative;
+}
+.json::before {
+    content: "{";
+}
+.json::after {
+    content: "}";
+}
+.json tr td:first-child {
+    @apply ps-5;
+}
+.json tr td.object::after,
+.json tr td.object::before {
+    content: unset;
+}
+.json tr td,
+.json tr td,
+.json tr th,
+.json tr th {
+    white-space: normal;
+    vertical-align: top;
+    padding: 0.5em;
+    position: relative;
+}
+.json::before,
+.json::after,
+.json .array::before,
+.json .array::after {
+    color: orange;
+    font-size: large;
+    font-weight: bold;
+}
+.json .array::before {
+    content: "\[";
+}
+.json .array::after {
+    content: "\]";
+}
+.json .array:has(> .json) .json:last-child::after {
+    margin-left: -65px;
+}
+.json .array .json:not(:last-child):after {
+    content: "\}\,";
+}
+.json .array .json {
+    display: contents;
+}
+table.json {
+    margin-top: 6px;
+}
 
+*,
+html {
     scroll-behavior: smooth !important;
+}
+
+ul.navprogress {
+    @apply fixed z-50 top-0 right-0 h-full mt-[70px] text-right md:right-4 lg:right-8;
+}
+ul.navprogress li a {
+    @apply flex items-center justify-end;
+}
+ul.navprogress li a span {
+    @apply transition-all duration-500 max-w-0 whitespace-nowrap overflow-hidden m-3;
+}
+ul.navprogress li:hover svg {
+    @apply text-2xl;
+}
+ul.navprogress li:hover span {
+    @apply max-w-[150px];
+}
+
+.scrollable {
+    @apply overflow-y-auto w-full h-full flex items-center;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(33, 33, 37) transparent;
+}
+
+/* Works on Chrome, Edge, and Safari */
+.scrollable::-webkit-scrollbar {
+    width: 12px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+   @apply bg-slate-800 rounded-full shadow-[0_0_4px_#888] dark:bg-slate-100;
+}
+
+/*
+  Enter and leave animations can use different
+  durations and timing functions.
+*/
+.rotate-enter-active {
+    transition: all 0.5s ease-out;
+    transform: scale(1.2);
+}
+
+.rotate-leave-active {
+    transition: all 0.5s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.rotate-enter-from,
+.rotate-leave-to {
+    transform: rotate(180deg) scale(0);
+    opacity: 0;
+}
+
+.list-enter-active,
+.list-leave-active {
+    transition: all 0.5s ease;
+}
+.list-enter-from,
+.list-leave-to {
+    opacity: 0;
+    transform: translateX(30px);
 }

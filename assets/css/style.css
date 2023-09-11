@@ -1,0 +1,151 @@
+body {
+  color: white;
+  background: linear-gradient(#02101f 30%, #667);
+}
+
+.book {
+  padding: 15px;
+  max-width: 400px;
+  width: 90%;
+  margin: 15px;
+  background: #ffac02;
+  box-shadow: 8px 5px #e29800, 16px 10px #c48400, 24px 15px #a56f00;
+}
+
+img {
+  object-fit: cover;
+  max-width: 400px !important;
+}
+img.logo {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  width: 80px;
+  height: 80px;
+  aspect-ratio: 1;
+  filter: drop-shadow(0px 0px 4px #dddddd);
+  z-index: 9999999;
+}
+
+.welcome-screen {
+  position: relative;
+  text-align: center;
+  height: 90vh;
+  width: 100%;
+}
+.welcome-screen > .floating-center {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.list {
+  margin-bottom: 50px;
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+.list::before {
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: white;
+}
+.list > *:last-child {
+  font-size: 25px;
+  border: none !important;
+  max-width: unset !important;
+  width: 100% !important;
+  text-align: center !important;
+  position: absolute;
+}
+.list > *:last-child::after {
+  content: none !important;
+}
+.list > *:nth-child(2n+2) {
+  text-align: left;
+  margin-left: auto;
+  border-right: none;
+}
+.list > *:nth-child(2n+2)::after {
+  content: "";
+  position: absolute;
+  left: calc(0% - 7.3170731707px);
+  right: unset;
+}
+.list > * {
+  padding: 5px 20px;
+  text-align: right;
+  max-width: 50%;
+  border-left: none;
+  position: relative;
+  padding-bottom: 5px;
+}
+.list > *::after {
+  border-radius: 50px;
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: calc(0% - 7.3170731707px);
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background: white;
+}
+
+.top {
+  top: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.left {
+  left: 0;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.above {
+  z-index: 99;
+}
+
+.flag {
+  width: 25px;
+  height: auto;
+  object-fit: contain;
+  box-shadow: -1px 1px 1px 0px #d8d8d8;
+}
+
+.mToast {
+  background: #9bd2ff;
+  color: #005fad;
+  padding: 5px 25px;
+  transition: 0.5s;
+  position: fixed;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  border-radius: 5px;
+  z-index: 999;
+}
+.mToast.show {
+  top: 15px;
+}
+.mToast.close {
+  top: -50px;
+}/*# sourceMappingURL=style.css.map */
