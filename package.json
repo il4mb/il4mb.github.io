@@ -2,10 +2,11 @@
   "name": "il4mb.github.io",
   "version": "1.0.0",
   "description": "My static portfolio",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel src/index.html"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   "homepage": "https://github.com/il4mb/il4mb.github.io#readme",
   "devDependencies": {
     "@parcel/transformer-vue": "2.9.3",
+    "gh-pages": "^6.0.0",
     "parcel": "^2.9.3",
     "typescript": "^5.2.2"
   },
@@ -34,6 +36,7 @@
     "@fortawesome/vue-fontawesome": "^3.0.3",
     "@vueuse/components": "^10.4.1",
     "@vueuse/core": "^10.4.1",
+    "animate.css": "^4.1.1",
     "tailwindcss": "^3.3.3",
     "vue": "^3.3.4",
     "vue-router": "4"
