@@ -22,7 +22,7 @@
 
             <figure class="md:flex-1 order-2 md:order-last w-full mt-5 text-right">
                 <div
-                    class="w-[208px] h-[208px] inline-block rounded-full bg-slate-400 relative overflow-visible border-4 border-slate-800">
+                    class="w-[208px] h-[208px] inline-block rounded-full bg-slate-400 relative overflow-visible border-4 border-transparent">
                     <img class="w-[200px] h-[200px] object-cover rounded-b-full absolute bottom-0 drop-shadow-[2px_4px_4px_rgb(0,0,0)] hover:drop-shadow-[2px_4px_4px_#1249a9] hover:w-[295px] hover:h-[295px] transition-all duration-500"
                         src="../assets/images//ilhamb.png" alt="Profile Picture">
                 </div>
