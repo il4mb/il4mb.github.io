@@ -1,7 +1,7 @@
 <template>
     <div class="scrollable">
-        <div>
-            <section class="max-w-[1200px] w-full mx-auto p-5 py-10">
+        <div class="max-w-[1200px] w-full mx-auto p-5 py-10">
+            <section class="mb-12">
                 <header class="mb-8">
                     <h2 class="text-3xl font-bold font-ops">About Me</h2>
                 </header>
@@ -15,13 +15,14 @@
                     <h2 class="text-3xl font-bold font-ops">My Gallery</h2>
                 </header>
 
-                <div class="flex max-w-[95vw] w-full mx-auto overflow-hidden">
+                <div class="flex overflow-hidden items-end justify-center">
 
                     <TransitionGroup v-for="item, x in gallery">
-                        <figure :key="x" class="overflow-hidden transition-all duration-[1s]"
-                            :class="{ 'w-full': x === activeItem, 'w-0': x !== activeItem }">
+                        <figure :key="x" class="w-full overflow-hidden transition-all duration-[1s]"
+                            :class="{ 'max-w-full': x === activeItem, 'max-w-0': x !== activeItem }">
                             <div class="aspect-square w-full max-w-[400px] mx-auto">
-                                <img class="rounded-lg shadow-md object-cover aspect-square w-full h-full" :src="item.file" alt="Image Gallery">
+                                <img class="rounded-lg shadow-md object-cover aspect-square w-full h-full" :src="item.file"
+                                    alt="Image Gallery">
                                 <figcaption class="min-w-max">{{ item.caption }}</figcaption>
                             </div>
                         </figure>
@@ -64,7 +65,7 @@ export default defineComponent({
 
     mounted() {
         setInterval(() => {
-            if (this.activeItem == (this.gallery.length -1) || this.activeItem == 0) {
+            if (this.activeItem == (this.gallery.length - 1) || this.activeItem == 0) {
                 this.mode = this.mode == 1 ? 0 : 1;
             }
             if (this.mode == 1) {

@@ -47,5 +47,11 @@ export default defineComponent({
         define: Object
     },
 
+    data() {
+        return {
+            transitionName: null
+        }
+    }
+
 })
 </script>

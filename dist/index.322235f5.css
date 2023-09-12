@@ -318,6 +318,10 @@ html {
   margin-top: 1.25rem;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .block {
   display: block;
 }
@@ -410,6 +414,22 @@ html {
   max-width: 32rem;
 }
 
+.max-w-\[90\] {
+  max-width: 90px;
+}
+
+.max-w-\[90\%\] {
+  max-width: 90%;
+}
+
+.max-w-full {
+  max-width: 100%;
+}
+
+.max-w-0 {
+  max-width: 0;
+}
+
 .grid-cols-8 {
   grid-template-columns: repeat(8, minmax(0, 1fr));
 }
@@ -420,6 +440,10 @@ html {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
