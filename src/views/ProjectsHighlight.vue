@@ -16,7 +16,7 @@
 
                         <div class="slice-layer px-5 py-3">
 
-                            <div class="w-12 h-12 rounded-lg mb-3 overflow-hidden">
+                            <div class="w-12 h-12 rounded-lg mb-3 overflow-hidden" v-if="item.img">
                                 <img class="w-full h-full object-cover" :src="item.img" alt="Project Picture">
                             </div>
 
@@ -32,7 +32,7 @@
                                 </template>
                             </p>
                             <template v-if="(item.url)">
-                                <a class="font-ops hover:scale-105 hover:text-blue-500" :href="item.url" target="_blank">Visit Website</a>
+                                <a class="font-ops hover:scale-105 hover:text-blue-500" :href="item.url" target="_blank">Visit Project</a>
                             </template>
                         </div>
                     </div>

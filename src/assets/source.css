@@ -172,8 +172,12 @@ html {
     scroll-behavior: smooth !important;
 }
 
+.word-break {
+    word-break: break-all;
+}
+
 ul.navprogress {
-    @apply fixed z-50 top-0 right-3 h-full mt-[70px] text-right md:right-5 lg:right-8;
+    @apply fixed z-50 top-0 right-3 h-fit mt-[70px] text-right md:right-5 lg:right-8;
 }
 ul.navprogress li a {
     @apply flex items-center justify-end;
