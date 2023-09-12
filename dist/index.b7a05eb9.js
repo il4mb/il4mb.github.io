@@ -11690,54 +11690,48 @@ const harciimg = require("9810bbab7881944b");
 module.exports = [
     {
         "title": "Website Harci.id",
-        "description": "Website Harci.id",
+        "description": "Contributed as a full stack to the development of the company website PT. Harci Mandiri Sentosa",
         "url": "https://harci.id",
         "img": harciimg,
-        "technologies": {
-            "Frontend": [
-                "HTML5",
-                "CSS3",
-                "JavaScript",
-                "PHP",
-                "Symfony",
-                "MySQL",
-                "Bootstrap 5"
-            ]
-        }
+        "technologies": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "PHP",
+            "Symfony",
+            "MySQL",
+            "Bootstrap 5"
+        ]
     },
     {
         "title": "Website Harci.id",
         "description": "Website Harci.id",
         "url": "https://harci.id",
         "img": harciimg,
-        "technologies": {
-            "Frontend": [
-                "HTML5",
-                "CSS3",
-                "JavaScript",
-                "PHP",
-                "Symfony",
-                "MySQL",
-                "Bootstrap 5"
-            ]
-        }
+        "technologies": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "PHP",
+            "Symfony",
+            "MySQL",
+            "Bootstrap 5"
+        ]
     },
     {
         "title": "Website Harci.id",
         "description": "Website Harci.id",
         "url": "https://harci.id",
         "img": harciimg,
-        "technologies": {
-            "Frontend": [
-                "HTML5",
-                "CSS3",
-                "JavaScript",
-                "PHP",
-                "Symfony",
-                "MySQL",
-                "Bootstrap 5"
-            ]
-        }
+        "technologies": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "PHP",
+            "Symfony",
+            "MySQL",
+            "Bootstrap 5"
+        ]
     }
 ];
 
@@ -11851,7 +11845,7 @@ const _hoisted_9 = /*#__PURE__*/ (0, _vue.createElementVNode)("figure", {
         class: "w-[208px] h-[208px] inline-block rounded-full bg-slate-400 relative overflow-visible border-4 border-slate-800"
     }, [
         /*#__PURE__*/ (0, _vue.createElementVNode)("img", {
-            class: "w-[200px] h-[200px] object-cover rounded-b-full absolute bottom-0 drop-shadow-[2px_4px_4px_rgb(0,0,0)] hover:drop-shadow-[2px_4px_4px_blue] hover:w-[295px] hover:h-[295px] transition-all duration-500",
+            class: "w-[200px] h-[200px] object-cover rounded-b-full absolute bottom-0 drop-shadow-[2px_4px_4px_rgb(0,0,0)] hover:drop-shadow-[2px_4px_4px_#1249a9] hover:w-[295px] hover:h-[295px] transition-all duration-500",
             src: (0, _ilhambPngDefault.default),
             alt: "Profile Picture"
         })
@@ -12350,50 +12344,87 @@ const _hoisted_1 = {
 const _hoisted_2 = {
     class: "w-full"
 };
-const _hoisted_3 = /*#__PURE__*/ (0, _vue.createElementVNode)("header", null, [
+const _hoisted_3 = /*#__PURE__*/ (0, _vue.createElementVNode)("header", {
+    class: "mb-6"
+}, [
     /*#__PURE__*/ (0, _vue.createElementVNode)("h2", {
         class: "text-3xl font-ops"
     }, "Portfolio Highlights")
 ], -1 /* HOISTED */ );
-const _hoisted_4 = /*#__PURE__*/ (0, _vue.createElementVNode)("article", null, [
+const _hoisted_4 = {
+    class: "px-3"
+};
+const _hoisted_5 = /*#__PURE__*/ (0, _vue.createElementVNode)("article", null, [
     /*#__PURE__*/ (0, _vue.createElementVNode)("p", null, "Explore some of my recent projects to get a taste of what I can create:")
 ], -1 /* HOISTED */ );
-const _hoisted_5 = {
-    class: "grid grid-cols-8 gap-5"
+const _hoisted_6 = {
+    class: "grid grid-cols-8 gap-8 py-6"
 };
-const _hoisted_6 = [
-    "innerHTML"
-];
 const _hoisted_7 = {
-    class: "rounded-lg overflow-hidden bg-slate-400"
+    class: "slice-layer px-5 py-3"
 };
-const _hoisted_8 = [
+const _hoisted_8 = {
+    class: "w-12 h-12 rounded-lg mb-3 overflow-hidden"
+};
+const _hoisted_9 = [
     "src"
 ];
+const _hoisted_10 = [
+    "innerHTML"
+];
+const _hoisted_11 = {
+    class: "text-sm mb-2 ps-3"
+};
+const _hoisted_12 = /*#__PURE__*/ (0, _vue.createElementVNode)("h5", {
+    class: "font-ops"
+}, "Technologies", -1 /* HOISTED */ );
+const _hoisted_13 = {
+    class: "text-sm ps-3"
+};
 function render(_ctx, _cache, $props, $setup, $data, $options) {
     return (0, _vue.openBlock)(), (0, _vue.createElementBlock)("div", _hoisted_1, [
         (0, _vue.createElementVNode)("section", _hoisted_2, [
             _hoisted_3,
-            _hoisted_4,
-            (0, _vue.createElementVNode)("div", _hoisted_5, [
-                ((0, _vue.openBlock)(true), (0, _vue.createElementBlock)((0, _vue.Fragment), null, (0, _vue.renderList)(_ctx.data, (item)=>{
-                    return (0, _vue.openBlock)(), (0, _vue.createElementBlock)("div", {
-                        class: (0, _vue.normalizeClass)([
-                            _ctx.getRandomSpan(),
-                            "rounded-lg overflow-hidden bg-slate-200"
-                        ])
-                    }, [
-                        (0, _vue.createElementVNode)("h4", {
-                            innerHTML: item.title
-                        }, null, 8 /* PROPS */ , _hoisted_6),
-                        (0, _vue.createElementVNode)("div", _hoisted_7, [
-                            (0, _vue.createElementVNode)("img", {
-                                src: item.img,
-                                alt: "Project Picture"
-                            }, null, 8 /* PROPS */ , _hoisted_8)
-                        ])
-                    ], 2 /* CLASS */ );
-                }), 256 /* UNKEYED_FRAGMENT */ ))
+            (0, _vue.createElementVNode)("div", _hoisted_4, [
+                _hoisted_5,
+                (0, _vue.createElementVNode)("div", _hoisted_6, [
+                    ((0, _vue.openBlock)(true), (0, _vue.createElementBlock)((0, _vue.Fragment), null, (0, _vue.renderList)(_ctx.data, (item)=>{
+                        return (0, _vue.openBlock)(), (0, _vue.createElementBlock)("div", {
+                            class: (0, _vue.normalizeClass)([
+                                _ctx.getRandomSpan(),
+                                ""
+                            ])
+                        }, [
+                            (0, _vue.createElementVNode)("div", _hoisted_7, [
+                                (0, _vue.createElementVNode)("div", _hoisted_8, [
+                                    (0, _vue.createElementVNode)("img", {
+                                        class: "w-full h-full object-cover",
+                                        src: item.img,
+                                        alt: "Project Picture"
+                                    }, null, 8 /* PROPS */ , _hoisted_9)
+                                ]),
+                                (0, _vue.createElementVNode)("h4", {
+                                    class: "font-ops text-lg",
+                                    innerHTML: item.title
+                                }, null, 8 /* PROPS */ , _hoisted_10),
+                                (0, _vue.createElementVNode)("p", _hoisted_11, (0, _vue.toDisplayString)(item.description), 1 /* TEXT */ ),
+                                _hoisted_12,
+                                (0, _vue.createElementVNode)("p", _hoisted_13, [
+                                    ((0, _vue.openBlock)(true), (0, _vue.createElementBlock)((0, _vue.Fragment), null, (0, _vue.renderList)(item.technologies, (tech, x)=>{
+                                        return (0, _vue.openBlock)(), (0, _vue.createElementBlock)((0, _vue.Fragment), null, [
+                                            (0, _vue.createElementVNode)("span", null, (0, _vue.toDisplayString)(tech), 1 /* TEXT */ ),
+                                            x < item.technologies.length - 1 ? ((0, _vue.openBlock)(), (0, _vue.createElementBlock)((0, _vue.Fragment), {
+                                                key: 0
+                                            }, [
+                                                (0, _vue.createTextVNode)(", ")
+                                            ], 64 /* STABLE_FRAGMENT */ )) : (0, _vue.createCommentVNode)("v-if", true)
+                                        ], 64 /* STABLE_FRAGMENT */ );
+                                    }), 256 /* UNKEYED_FRAGMENT */ ))
+                                ])
+                            ])
+                        ], 2 /* CLASS */ );
+                    }), 256 /* UNKEYED_FRAGMENT */ ))
+                ])
             ])
         ])
     ]);

@@ -1,24 +1,39 @@
 <template>
     <div class="scrollable">
         <section class="w-full">
-            <header>
+            <header class="mb-6">
                 <h2 class="text-3xl font-ops">Portfolio Highlights</h2>
             </header>
-            <article>
-                <p>Explore some of my recent projects to get a taste of what I can create:</p>
-            </article>
 
-            <div class="grid grid-cols-8 gap-5">
+            <div class="px-3">
+                <article>
+                    <p>Explore some of my recent projects to get a taste of what I can create:</p>
+                </article>
 
-                <div v-for="item in data" :class="getRandomSpan()" class="rounded-lg overflow-hidden bg-slate-200">
+                <div class="grid grid-cols-8 gap-8 py-6">
 
-                    <h4 v-html="item.title"></h4>
+                    <div v-for="item in data" :class="getRandomSpan()" class="">
 
-                    <div class="rounded-lg overflow-hidden bg-slate-400">
-                        <img :src="item.img" alt="Project Picture">
+                        <div class="slice-layer px-5 py-3">
+
+                            <div class="w-12 h-12 rounded-lg mb-3 overflow-hidden">
+                                <img class="w-full h-full object-cover" :src="item.img" alt="Project Picture">
+                            </div>
+
+                            <h4 class="font-ops text-lg" v-html="item.title"></h4>
+                            <p class="text-sm mb-2 ps-3">{{ item.description }}</p>
+
+
+                            <h5 class="font-ops">Technologies</h5>
+                            <p class="text-sm ps-3"><template v-for="tech, x in item.technologies">
+                                    <span>{{ tech }}</span>
+                                    <template v-if="x < item.technologies.length - 1">, </template>
+                                </template></p>
+
+                        </div>
                     </div>
-                </div>
 
+                </div>
             </div>
 
         </section>
