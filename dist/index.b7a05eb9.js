@@ -11929,6 +11929,11 @@ var _vue = require("vue");
 exports.default = (0, _vue.defineComponent)({
     props: {
         define: Object
+    },
+    data () {
+        return {
+            transitionName: null
+        };
     }
 });
 
@@ -12255,42 +12260,45 @@ const _hoisted_1 = {
 const _hoisted_2 = {
     class: "max-w-[1200px] w-full mx-auto p-5 py-10"
 };
-const _hoisted_3 = /*#__PURE__*/ (0, _vue.createElementVNode)("header", {
+const _hoisted_3 = {
+    class: "mb-12"
+};
+const _hoisted_4 = /*#__PURE__*/ (0, _vue.createElementVNode)("header", {
     class: "mb-8"
 }, [
     /*#__PURE__*/ (0, _vue.createElementVNode)("h2", {
         class: "text-3xl font-bold font-ops"
     }, "About Me")
 ], -1 /* HOISTED */ );
-const _hoisted_4 = {
+const _hoisted_5 = {
     class: "bg-slate-200 dark:bg-slate-600 text-slate-600 dark:text-slate-200 p-5 rounded-lg"
 };
-const _hoisted_5 = /*#__PURE__*/ (0, _vue.createElementVNode)("header", {
+const _hoisted_6 = /*#__PURE__*/ (0, _vue.createElementVNode)("header", {
     class: "mb-6"
 }, [
     /*#__PURE__*/ (0, _vue.createElementVNode)("h2", {
         class: "text-3xl font-bold font-ops"
     }, "My Gallery")
 ], -1 /* HOISTED */ );
-const _hoisted_6 = {
-    class: "flex max-w-[95vw] w-full mx-auto overflow-hidden"
-};
 const _hoisted_7 = {
+    class: "flex overflow-hidden items-end justify-center"
+};
+const _hoisted_8 = {
     class: "aspect-square w-full max-w-[400px] mx-auto"
 };
-const _hoisted_8 = [
+const _hoisted_9 = [
     "src"
 ];
-const _hoisted_9 = {
+const _hoisted_10 = {
     class: "min-w-max"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_JsonDataDisplay = (0, _vue.resolveComponent)("JsonDataDisplay");
     return (0, _vue.openBlock)(), (0, _vue.createElementBlock)("div", _hoisted_1, [
-        (0, _vue.createElementVNode)("div", null, [
-            (0, _vue.createElementVNode)("section", _hoisted_2, [
-                _hoisted_3,
-                (0, _vue.createElementVNode)("article", _hoisted_4, [
+        (0, _vue.createElementVNode)("div", _hoisted_2, [
+            (0, _vue.createElementVNode)("section", _hoisted_3, [
+                _hoisted_4,
+                (0, _vue.createElementVNode)("article", _hoisted_5, [
                     (0, _vue.createVNode)(_component_JsonDataDisplay, {
                         data: _ctx.data
                     }, null, 8 /* PROPS */ , [
@@ -12299,28 +12307,28 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
                 ])
             ]),
             (0, _vue.createElementVNode)("section", null, [
-                _hoisted_5,
-                (0, _vue.createElementVNode)("div", _hoisted_6, [
+                _hoisted_6,
+                (0, _vue.createElementVNode)("div", _hoisted_7, [
                     ((0, _vue.openBlock)(true), (0, _vue.createElementBlock)((0, _vue.Fragment), null, (0, _vue.renderList)(_ctx.gallery, (item, x)=>{
                         return (0, _vue.openBlock)(), (0, _vue.createBlock)((0, _vue.TransitionGroup), null, {
                             default: (0, _vue.withCtx)(()=>[
                                     ((0, _vue.openBlock)(), (0, _vue.createElementBlock)("figure", {
                                         key: x,
                                         class: (0, _vue.normalizeClass)([
-                                            "overflow-hidden transition-all duration-[1s]",
+                                            "w-full overflow-hidden transition-all duration-[1s]",
                                             {
-                                                "w-full": x === _ctx.activeItem,
-                                                "w-0": x !== _ctx.activeItem
+                                                "max-w-full": x === _ctx.activeItem,
+                                                "max-w-0": x !== _ctx.activeItem
                                             }
                                         ])
                                     }, [
-                                        (0, _vue.createElementVNode)("div", _hoisted_7, [
+                                        (0, _vue.createElementVNode)("div", _hoisted_8, [
                                             (0, _vue.createElementVNode)("img", {
                                                 class: "rounded-lg shadow-md object-cover aspect-square w-full h-full",
                                                 src: item.file,
                                                 alt: "Image Gallery"
-                                            }, null, 8 /* PROPS */ , _hoisted_8),
-                                            (0, _vue.createElementVNode)("figcaption", _hoisted_9, (0, _vue.toDisplayString)(item.caption), 1 /* TEXT */ )
+                                            }, null, 8 /* PROPS */ , _hoisted_9),
+                                            (0, _vue.createElementVNode)("figcaption", _hoisted_10, (0, _vue.toDisplayString)(item.caption), 1 /* TEXT */ )
                                         ])
                                     ], 2 /* CLASS */ ))
                                 ]),
@@ -12811,6 +12819,21 @@ var _navProgressVue = require("./views/components/NavProgress.vue");
 var _navProgressVueDefault = parcelHelpers.interopDefault(_navProgressVue);
 var _vue = require("vue");
 exports.default = (0, _vue.defineComponent)({
+    data () {
+        return {
+            items: [],
+            leaveAnimationClass: "animate__animated animate__slideOutDown",
+            enterAnimationClass: "animate__animated animate__slideOutUp"
+        };
+    },
+    created () {
+        this.$router.options.routes.forEach((route)=>{
+            this.items.push({
+                name: route.name,
+                path: route.path
+            });
+        });
+    },
     setup () {
         const define = {
             name: "ilham B",
@@ -12828,6 +12851,21 @@ exports.default = (0, _vue.defineComponent)({
     components: {
         ModSwitch: (0, _themeModeSwitchVueDefault.default),
         NavProgress: (0, _navProgressVueDefault.default)
+    },
+    watch: {
+        $route (to, from) {
+            const xFrom = this.items.find((x)=>x.path == from.path);
+            const xTo = this.items.find((x)=>x.path == to.path);
+            const ixf = this.items.indexOf(xFrom);
+            const ixt = this.items.indexOf(xTo);
+            if (ixf < ixt) {
+                this.leaveAnimationClass = "animate__animated animate__bounceOutUp";
+                this.enterAnimationClass = "animate__animated animate__bounceInUp";
+            } else {
+                this.leaveAnimationClass = "animate__animated animate__bounceOutDown";
+                this.enterAnimationClass = "animate__animated animate__bounceInDown";
+            }
+        }
     }
 });
 
@@ -13062,8 +13100,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         (0, _vue.createVNode)(_component_router_view, null, {
             default: (0, _vue.withCtx)(({ Component, route })=>[
                     (0, _vue.createVNode)((0, _vue.Transition), {
-                        "enter-active-class": "animate__animated animate__slideOutUp",
-                        "leave-active-class": "animate__animated animate__slideOutDown"
+                        "enter-active-class": _ctx.enterAnimationClass,
+                        "leave-active-class": _ctx.leaveAnimationClass,
+                        mode: "out-in"
                     }, {
                         default: (0, _vue.withCtx)(()=>[
                                 ((0, _vue.openBlock)(), (0, _vue.createElementBlock)("main", {
@@ -13078,7 +13117,10 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
                                 ]))
                             ]),
                         _: 2 /* DYNAMIC */ 
-                    }, 1024 /* DYNAMIC_SLOTS */ )
+                    }, 1032 /* PROPS, DYNAMIC_SLOTS */ , [
+                        "enter-active-class",
+                        "leave-active-class"
+                    ])
                 ]),
             _: 1 /* STABLE */ 
         })
