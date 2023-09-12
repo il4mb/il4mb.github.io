@@ -1,0 +1,22 @@
+[
+    {
+        "label": "Email",
+        "link": "mailto:durianbohong@gmail.com",
+        "icon": "fas fa-envelope"
+    },
+    {
+        "label": "Github",
+        "link": "https://github.com/il4mb",
+        "icon": "fab fa-github"
+    },
+    {
+        "label": "LinkedIn",
+        "link": "https://www.linkedin.com/in/il4mb/",
+        "icon": "fab fa-linkedin"
+    },
+    {
+        "label": "Instagram",
+        "link": "https://www.instagram.com/______ilham_b/",
+        "icon": "fab fa-instagram"
+    }
+]

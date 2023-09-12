@@ -194,7 +194,7 @@ ul.navprogress li:hover span {
     scrollbar-color: rgb(33, 33, 37) transparent;
 }
 
-.scrollable section {
+.scrollable >* {
     @apply max-w-[1200px] mx-auto py-4 md:py-8;
 }
 

@@ -25,11 +25,15 @@
 
 
                             <h5 class="font-ops">Technologies</h5>
-                            <p class="text-sm ps-3"><template v-for="tech, x in item.technologies">
+                            <p class="text-sm ps-3 mb-3">
+                                <template v-for="tech, x in item.technologies">
                                     <span>{{ tech }}</span>
                                     <template v-if="x < item.technologies.length - 1">, </template>
-                                </template></p>
-
+                                </template>
+                            </p>
+                            <template v-if="(item.url)">
+                                <a class="font-ops hover:scale-105 hover:text-blue-500" :href="item.url" target="_blank">Visit Website</a>
+                            </template>
                         </div>
                     </div>
 

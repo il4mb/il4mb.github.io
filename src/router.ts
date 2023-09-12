@@ -3,12 +3,15 @@ import { createRouter, createWebHistory } from "vue-router";
 import jsonData from "./data/about.json";
 import technologies from "./data/technologie.json";
 import projects from "./data/projects.json.js";
+import contacts from "./data/contacts.json";
+import galleryData from "./data/gallery.json.js";
 
 import Welcome from "./views/Welcome.vue";
 import AboutMe from "./views/AboutMe.vue";
 import WhatIdo from "./views/WhatIdo.vue";
 import MyApproach from "./views/MyApproach.vue";
 import ProjectsHighlight from "./views/ProjectsHighlight.vue";
+import ContactMe from "./views/ContactMe.vue";
 
 export default createRouter({
     history: createWebHistory(),
@@ -29,7 +32,9 @@ export default createRouter({
             component: AboutMe,
             name: "About me",
             props: {
-                data: jsonData
+                data: jsonData,
+                gallery: galleryData
+
             }
         },
         {
@@ -57,6 +62,14 @@ export default createRouter({
             name: "Projects highlight",
             props: {
                 data: projects
+            }
+        },
+        {
+            path: "/contact-me",
+            component: ContactMe,
+            name: "Contact me",
+            props: {
+                data: contacts
             }
         }
     ],
