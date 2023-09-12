@@ -5,6 +5,7 @@ import technologies from "./data/technologie.json";
 import projects from "./data/projects.json.js";
 import contacts from "./data/contacts.json";
 import galleryData from "./data/gallery.json.js";
+import certificate from "./data/certificate.json.js";
 
 import Welcome from "./views/Welcome.vue";
 import AboutMe from "./views/AboutMe.vue";
@@ -34,7 +35,8 @@ export default createRouter({
             name: "About me",
             props: {
                 data: jsonData,
-                gallery: galleryData
+                gallery: galleryData,
+                certificate: certificate
 
             }
         },

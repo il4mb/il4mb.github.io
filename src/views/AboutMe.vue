@@ -12,30 +12,48 @@
 
             <section>
                 <header class="mb-6">
-                    <h2 class="text-3xl font-bold font-ops">My Gallery</h2>
+                    <h2 class="text-3xl font-bold font-ops">Licenses & certifications</h2>
                 </header>
 
-                <div class="flex overflow-hidden items-end justify-center">
+                <div class="">
+                    <template v-for="cert in certificate">
+                        <div class="mb-5 ps-3">
 
-                    <TransitionGroup v-for="item, x in gallery">
-                        <figure :key="x" class="w-full overflow-hidden transition-all duration-[1s]"
-                            :class="{ 'max-w-full': x === activeItem, 'max-w-0': x !== activeItem }">
-                            <div class="aspect-square w-full max-w-[400px] mx-auto">
-                                <img class="rounded-lg shadow-md object-cover aspect-square w-full h-full" :src="item.file"
-                                    alt="Image Gallery">
-                                <figcaption class="min-w-max">{{ item.caption }}</figcaption>
+                            <div class="flex items-start">
+                                <div class="bg-slate-300 w-20 h-20 p-2 rounded-sm dark:bg-slate-200">
+                                    <img class="object-contain w-full h-full mix-blend-multiply opacity-100"
+                                        :src="cert.organization.logo" :alt="cert.organization.name">
+                                </div>
+                                <table class="ms-3">
+                                    <tr>
+                                        <td>
+                                            <h3 class="text-xl font-ops">{{ cert.name }}</h3>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{ cert.organization.name }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Issuing {{ cert.issuingdate }}</td>
+                                    </tr>
+                                    <tr v-if="cert.expirationdate">
+                                        <td>Expiration {{ cert.expirationdate }}</td>
+                                    </tr>
+                                    <tr v-if="cert.credential">
+                                        <td>Credential {{ cert.credential }}</td>
+                                    </tr>
+                                </table>
                             </div>
-                        </figure>
-                    </TransitionGroup>
+                        </div>
+                    </template>
                 </div>
-
             </section>
-
         </div>
     </div>
 </template>
   
 <script>
+import VuePdfEmbed from 'vue-pdf-embed'
 import JsonDataDisplay from './components/JsonDataDisplay.vue';
 import { defineComponent, ref } from 'vue';
 
@@ -51,6 +69,17 @@ export default defineComponent({
         gallery: {
             type: [Array, Object],
             required: true
+        },
+        certificate: {
+            type: [Array, Object],
+            required: true
+        }
+    },
+
+    data() {
+        return {
+
+            document: "../assets/pdf/sertifikat-0.pdf"
         }
     },
 
@@ -96,6 +125,7 @@ export default defineComponent({
 
     components: {
         JsonDataDisplay,
+        VuePdfEmbed
     }
 
 });
