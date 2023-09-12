@@ -1,0 +1,36 @@
+{
+    "Frontend": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "React",
+        "Angular",
+        "Vue.js"
+    ],
+    "Backend": [
+        "Node.js",
+        "Python",
+        "PHP",
+        "Express"
+    ],
+    "Database": [
+        "MySQL",
+        "MongoDB",
+        "PostgreSQL",
+        "SQLite"
+    ],
+    "Version Control": [
+        "Git",
+        "GitHub"
+    ],
+    "Development": [
+        "AWS",
+        "Heroku",
+        "Firebase"
+    ],
+    "Responsive Design": [
+        "Bootstrap",
+        "Material-UI",
+        "Tailwind CSS"
+    ]
+}
