@@ -20,11 +20,11 @@
                         <div class="mb-5 ps-3">
 
                             <div class="flex items-start">
-                                <div class="bg-slate-300 w-20 h-20 p-2 rounded-sm dark:bg-slate-200">
+                                <div class="bg-slate-300 aspect-square w-full h-full max-w-[50px] max-h-[50px] p-2 rounded-sm dark:bg-slate-200">
                                     <img class="object-contain w-full h-full mix-blend-multiply opacity-100"
                                         :src="cert.organization.logo" :alt="cert.organization.name">
                                 </div>
-                                <table class="ms-3">
+                                <table class="ms-3 word-break">
                                     <tr>
                                         <td>
                                             <h3 class="text-xl font-ops">{{ cert.name }}</h3>
@@ -53,21 +53,14 @@
 </template>
   
 <script>
-import VuePdfEmbed from 'vue-pdf-embed'
 import JsonDataDisplay from './components/JsonDataDisplay.vue';
 import { defineComponent, ref } from 'vue';
-
-
 
 export default defineComponent({
 
     props: {
         data: {
             type: [Object, Array, String],
-            required: true
-        },
-        gallery: {
-            type: [Array, Object],
             required: true
         },
         certificate: {
@@ -83,30 +76,6 @@ export default defineComponent({
         }
     },
 
-    setup() {
-        const activeItem = ref(0);
-        const mode = ref(0);
-        return {
-            activeItem,
-            mode
-        }
-    },
-
-    mounted() {
-        setInterval(() => {
-            if (this.activeItem == (this.gallery.length - 1) || this.activeItem == 0) {
-                this.mode = this.mode == 1 ? 0 : 1;
-            }
-            if (this.mode == 1) {
-                this.activeItem += 1;
-            }
-            if (this.mode == 0) {
-                this.activeItem -= 1;
-            }
-
-        }, 5000);
-    },
-
 
     methods: {
         isArray(value) {
@@ -115,17 +84,8 @@ export default defineComponent({
     },
 
 
-    watch: {
-        activeItem() {
-            if (this.gallery.length <= this.activeItem) {
-                this.activeItem = 0
-            }
-        }
-    },
-
     components: {
-        JsonDataDisplay,
-        VuePdfEmbed
+        JsonDataDisplay
     }
 
 });

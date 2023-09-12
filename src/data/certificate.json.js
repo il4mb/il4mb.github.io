@@ -75,7 +75,7 @@ module.exports = [
         "organization": organization.dicoding,
         "issuingdate": "Feb 2023",
         "expirationdate": "Feb 2026",
-        "credential": "https://avatars.githubusercontent.com/u/22091590?s=280&v=4",
+        "credential": "",
         "file": c4
     },
     {
