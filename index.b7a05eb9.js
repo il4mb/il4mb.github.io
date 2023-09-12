@@ -592,7 +592,7 @@ app.component("v-icon", (0, _vueFontawesome.FontAwesomeIcon));
 app.use((0, _routerDefault.default));
 app.mount("#app");
 
-},{"animate.css":"8t3va","vue":"gzxs9","./router":"4QFWt","./App.vue":"fYNyc","@fortawesome/vue-fontawesome":"5NhFn","@fortawesome/fontawesome-svg-core":"hQ3zC","@fortawesome/free-solid-svg-icons":"5lkdy","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@fortawesome/free-brands-svg-icons":"14OGV"}],"8t3va":[function() {},{}],"gzxs9":[function(require,module,exports) {
+},{"animate.css":"8t3va","vue":"gzxs9","./router":"4QFWt","./App.vue":"fYNyc","@fortawesome/vue-fontawesome":"5NhFn","@fortawesome/fontawesome-svg-core":"hQ3zC","@fortawesome/free-solid-svg-icons":"5lkdy","@fortawesome/free-brands-svg-icons":"14OGV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8t3va":[function() {},{}],"gzxs9":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "compile", ()=>compile);
@@ -8509,7 +8509,7 @@ exports.default = (0, _vueRouter.createRouter)({
     ]
 });
 
-},{"vue-router":"c18b3","./data/technologie.json":"cniOP","./data/projects.json.js":"5PCfv","./views/Welcome.vue":"jB5Sm","./views/AboutMe.vue":"3TNxj","./views/WhatIdo.vue":"jYzbQ","./views/MyApproach.vue":"lO4vj","./views/ProjectsHighlight.vue":"aIXqP","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./views/ContactMe.vue":"bhmgh","./data/contacts.json":"lQBf8","./data/about.json":"cEVhq","./data/gallery.json.js":"39VMH"}],"c18b3":[function(require,module,exports) {
+},{"vue-router":"c18b3","./data/about.json":"cEVhq","./data/technologie.json":"cniOP","./data/projects.json.js":"5PCfv","./data/contacts.json":"lQBf8","./data/gallery.json.js":"39VMH","./views/Welcome.vue":"jB5Sm","./views/AboutMe.vue":"3TNxj","./views/WhatIdo.vue":"jYzbQ","./views/MyApproach.vue":"lO4vj","./views/ProjectsHighlight.vue":"aIXqP","./views/ContactMe.vue":"bhmgh","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"c18b3":[function(require,module,exports) {
 /*!
   * vue-router v4.2.4
   * (c) 2023 Eduardo San Martin Morote
@@ -11696,7 +11696,10 @@ function now() {
     return isPerformanceSupported() ? perf.now() : Date.now();
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cniOP":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cEVhq":[function(require,module,exports) {
+module.exports = JSON.parse('{"Name":"Ilham B","Location":"Pekanbaru, Indonesia","Status":"Not Graduated","Occupation":"Student and Full-Stack Software Engineer","Education":[{"University":"STMIK AMIK RIAU","Major":"Technical Informatics (Undergraduate)"}],"About Me":"I am a student and a full-stack software engineer based in Pekanbaru, Indonesia. I am currently working as a student at STMIK AMIK RIAU. My hobbies include listening to music. If coding could be a hobby, it would be my favorite because I spend most of my time on my computer."}');
+
+},{}],"cniOP":[function(require,module,exports) {
 module.exports = JSON.parse('{"Frontend":["HTML5","CSS3","JavaScript","React","Angular","Vue.js"],"Backend":["Node.js","Python","PHP","Express"],"Database":["MySQL","MongoDB","PostgreSQL","SQLite"],"Version Control":["Git","GitHub"],"Development":["AWS","Heroku","Firebase"],"Responsive Design":["Bootstrap","Material-UI","Tailwind CSS"]}');
 
 },{}],"5PCfv":[function(require,module,exports) {
@@ -11787,7 +11790,115 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"jB5Sm":[function(require,module,exports) {
+},{}],"lQBf8":[function(require,module,exports) {
+module.exports = JSON.parse('[{"label":"Email","link":"mailto:durianbohong@gmail.com","icon":"fas fa-envelope"},{"label":"Github","link":"https://github.com/il4mb","icon":"fab fa-github"},{"label":"LinkedIn","link":"https://www.linkedin.com/in/il4mb/","icon":"fab fa-linkedin"},{"label":"Instagram","link":"https://www.instagram.com/______ilham_b/","icon":"fab fa-instagram"}]');
+
+},{}],"39VMH":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _0Jpg = require("../assets/images/0.jpg");
+var _0JpgDefault = parcelHelpers.interopDefault(_0Jpg);
+var _1Jpg = require("../assets/images/1.jpg");
+var _1JpgDefault = parcelHelpers.interopDefault(_1Jpg);
+var _2Jpg = require("../assets/images/2.jpg");
+var _2JpgDefault = parcelHelpers.interopDefault(_2Jpg);
+var _3Jpg = require("../assets/images/3.jpg");
+var _3JpgDefault = parcelHelpers.interopDefault(_3Jpg);
+var _4Jpg = require("../assets/images/4.jpg");
+var _4JpgDefault = parcelHelpers.interopDefault(_4Jpg);
+var _5Jpg = require("../assets/images/5.jpg");
+var _5JpgDefault = parcelHelpers.interopDefault(_5Jpg);
+var _6Jpg = require("../assets/images/6.jpg");
+var _6JpgDefault = parcelHelpers.interopDefault(_6Jpg);
+var _70Jpg = require("../assets/images/7.0.jpg");
+var _70JpgDefault = parcelHelpers.interopDefault(_70Jpg);
+var _71Jpg = require("../assets/images/7.1.jpg");
+var _71JpgDefault = parcelHelpers.interopDefault(_71Jpg);
+exports.default = [
+    {
+        file: (0, _0JpgDefault.default),
+        caption: "It's me when i was kid with my nephew",
+        location: "Monas Monument National Jakarta, Indonesia",
+        time: "2012"
+    },
+    {
+        file: (0, _1JpgDefault.default),
+        caption: "It's me when i was kid with my nephew",
+        location: "Monas Monument National Jakarta, Indonesia",
+        time: "2012"
+    },
+    {
+        file: (0, _2JpgDefault.default),
+        caption: "It's me when i was kid with my nephew",
+        location: "Monas Monument National Jakarta, Indonesia",
+        time: "2012"
+    },
+    {
+        file: (0, _3JpgDefault.default),
+        caption: "It's me when i was kid with my nephew",
+        location: "Monas Monument National Jakarta, Indonesia",
+        time: "2012"
+    },
+    {
+        file: (0, _4JpgDefault.default),
+        caption: "It's me when i was kid with my nephew",
+        location: "Monas Monument National Jakarta, Indonesia",
+        time: "2012"
+    },
+    {
+        file: (0, _5JpgDefault.default),
+        caption: "It's me when i was kid with my nephew",
+        location: "Monas Monument National Jakarta, Indonesia",
+        time: "2012"
+    },
+    {
+        file: (0, _6JpgDefault.default),
+        caption: "It's me when i was kid with my nephew",
+        location: "Monas Monument National Jakarta, Indonesia",
+        time: "2012"
+    },
+    {
+        file: (0, _70JpgDefault.default),
+        caption: "It's me when i was kid with my nephew",
+        location: "Monas Monument National Jakarta, Indonesia",
+        time: "2012"
+    },
+    {
+        file: (0, _71JpgDefault.default),
+        caption: "It's me when i was kid with my nephew",
+        location: "Monas Monument National Jakarta, Indonesia",
+        time: "2012"
+    }
+];
+
+},{"../assets/images/0.jpg":"gdrXt","../assets/images/1.jpg":"56LNR","../assets/images/2.jpg":"iQAqT","../assets/images/3.jpg":"iMcmU","../assets/images/4.jpg":"iQB3K","../assets/images/5.jpg":"eB4Lb","../assets/images/6.jpg":"3OuLs","../assets/images/7.0.jpg":"9WIwK","../assets/images/7.1.jpg":"gUoVa","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gdrXt":[function(require,module,exports) {
+module.exports = require("ab7ddb1ee9aaea46").getBundleURL("aNMIV") + "0.c53d37d5.jpg" + "?" + Date.now();
+
+},{"ab7ddb1ee9aaea46":"lgJ39"}],"56LNR":[function(require,module,exports) {
+module.exports = require("29bb447600057134").getBundleURL("aNMIV") + "1.fae19a87.jpg" + "?" + Date.now();
+
+},{"29bb447600057134":"lgJ39"}],"iQAqT":[function(require,module,exports) {
+module.exports = require("8470ee3b84158d").getBundleURL("aNMIV") + "2.3f3f5046.jpg" + "?" + Date.now();
+
+},{"8470ee3b84158d":"lgJ39"}],"iMcmU":[function(require,module,exports) {
+module.exports = require("472b09aa989d053a").getBundleURL("aNMIV") + "3.e813a57f.jpg" + "?" + Date.now();
+
+},{"472b09aa989d053a":"lgJ39"}],"iQB3K":[function(require,module,exports) {
+module.exports = require("d1484c4871e4d3c2").getBundleURL("aNMIV") + "4.5afbb2d4.jpg" + "?" + Date.now();
+
+},{"d1484c4871e4d3c2":"lgJ39"}],"eB4Lb":[function(require,module,exports) {
+module.exports = require("10114e8e10e57c22").getBundleURL("aNMIV") + "5.e32e3c64.jpg" + "?" + Date.now();
+
+},{"10114e8e10e57c22":"lgJ39"}],"3OuLs":[function(require,module,exports) {
+module.exports = require("b52a92b22c7c350d").getBundleURL("aNMIV") + "6.d3460c7f.jpg" + "?" + Date.now();
+
+},{"b52a92b22c7c350d":"lgJ39"}],"9WIwK":[function(require,module,exports) {
+module.exports = require("396da4ea0b92784f").getBundleURL("aNMIV") + "7.0.addff7b7.jpg" + "?" + Date.now();
+
+},{"396da4ea0b92784f":"lgJ39"}],"gUoVa":[function(require,module,exports) {
+module.exports = require("3901c98523c26e07").getBundleURL("aNMIV") + "7.1.e7e6c735.jpg" + "?" + Date.now();
+
+},{"3901c98523c26e07":"lgJ39"}],"jB5Sm":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 let script;
@@ -11818,6 +11929,11 @@ var _vue = require("vue");
 exports.default = (0, _vue.defineComponent)({
     props: {
         define: Object
+    },
+    data () {
+        return {
+            transitionName: null
+        };
     }
 });
 
@@ -12144,42 +12260,45 @@ const _hoisted_1 = {
 const _hoisted_2 = {
     class: "max-w-[1200px] w-full mx-auto p-5 py-10"
 };
-const _hoisted_3 = /*#__PURE__*/ (0, _vue.createElementVNode)("header", {
+const _hoisted_3 = {
+    class: "mb-12"
+};
+const _hoisted_4 = /*#__PURE__*/ (0, _vue.createElementVNode)("header", {
     class: "mb-8"
 }, [
     /*#__PURE__*/ (0, _vue.createElementVNode)("h2", {
         class: "text-3xl font-bold font-ops"
     }, "About Me")
 ], -1 /* HOISTED */ );
-const _hoisted_4 = {
+const _hoisted_5 = {
     class: "bg-slate-200 dark:bg-slate-600 text-slate-600 dark:text-slate-200 p-5 rounded-lg"
 };
-const _hoisted_5 = /*#__PURE__*/ (0, _vue.createElementVNode)("header", {
+const _hoisted_6 = /*#__PURE__*/ (0, _vue.createElementVNode)("header", {
     class: "mb-6"
 }, [
     /*#__PURE__*/ (0, _vue.createElementVNode)("h2", {
         class: "text-3xl font-bold font-ops"
     }, "My Gallery")
 ], -1 /* HOISTED */ );
-const _hoisted_6 = {
-    class: "flex max-w-[95vw] w-full mx-auto overflow-hidden"
-};
 const _hoisted_7 = {
+    class: "flex overflow-hidden items-end justify-center"
+};
+const _hoisted_8 = {
     class: "aspect-square w-full max-w-[400px] mx-auto"
 };
-const _hoisted_8 = [
+const _hoisted_9 = [
     "src"
 ];
-const _hoisted_9 = {
+const _hoisted_10 = {
     class: "min-w-max"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_JsonDataDisplay = (0, _vue.resolveComponent)("JsonDataDisplay");
     return (0, _vue.openBlock)(), (0, _vue.createElementBlock)("div", _hoisted_1, [
-        (0, _vue.createElementVNode)("div", null, [
-            (0, _vue.createElementVNode)("section", _hoisted_2, [
-                _hoisted_3,
-                (0, _vue.createElementVNode)("article", _hoisted_4, [
+        (0, _vue.createElementVNode)("div", _hoisted_2, [
+            (0, _vue.createElementVNode)("section", _hoisted_3, [
+                _hoisted_4,
+                (0, _vue.createElementVNode)("article", _hoisted_5, [
                     (0, _vue.createVNode)(_component_JsonDataDisplay, {
                         data: _ctx.data
                     }, null, 8 /* PROPS */ , [
@@ -12188,28 +12307,28 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
                 ])
             ]),
             (0, _vue.createElementVNode)("section", null, [
-                _hoisted_5,
-                (0, _vue.createElementVNode)("div", _hoisted_6, [
+                _hoisted_6,
+                (0, _vue.createElementVNode)("div", _hoisted_7, [
                     ((0, _vue.openBlock)(true), (0, _vue.createElementBlock)((0, _vue.Fragment), null, (0, _vue.renderList)(_ctx.gallery, (item, x)=>{
                         return (0, _vue.openBlock)(), (0, _vue.createBlock)((0, _vue.TransitionGroup), null, {
                             default: (0, _vue.withCtx)(()=>[
                                     ((0, _vue.openBlock)(), (0, _vue.createElementBlock)("figure", {
                                         key: x,
                                         class: (0, _vue.normalizeClass)([
-                                            "overflow-hidden transition-all duration-[1s]",
+                                            "w-full overflow-hidden transition-all duration-[1s]",
                                             {
-                                                "w-full": x === _ctx.activeItem,
-                                                "w-0": x !== _ctx.activeItem
+                                                "max-w-full": x === _ctx.activeItem,
+                                                "max-w-0": x !== _ctx.activeItem
                                             }
                                         ])
                                     }, [
-                                        (0, _vue.createElementVNode)("div", _hoisted_7, [
+                                        (0, _vue.createElementVNode)("div", _hoisted_8, [
                                             (0, _vue.createElementVNode)("img", {
                                                 class: "rounded-lg shadow-md object-cover aspect-square w-full h-full",
                                                 src: item.file,
                                                 alt: "Image Gallery"
-                                            }, null, 8 /* PROPS */ , _hoisted_8),
-                                            (0, _vue.createElementVNode)("figcaption", _hoisted_9, (0, _vue.toDisplayString)(item.caption), 1 /* TEXT */ )
+                                            }, null, 8 /* PROPS */ , _hoisted_9),
+                                            (0, _vue.createElementVNode)("figcaption", _hoisted_10, (0, _vue.toDisplayString)(item.caption), 1 /* TEXT */ )
                                         ])
                                     ], 2 /* CLASS */ ))
                                 ]),
@@ -12421,7 +12540,7 @@ exports.default = (0, _vue.defineComponent)({
         },
         getRandomSpan () {
             const random = this.randomNumber(3, 4);
-            return `col-${random} `;
+            return `col-${random}`;
         }
     }
 });
@@ -12447,34 +12566,39 @@ const _hoisted_3 = /*#__PURE__*/ (0, _vue.createElementVNode)("header", {
 const _hoisted_4 = {
     class: "px-3"
 };
-const _hoisted_5 = /*#__PURE__*/ (0, _vue.createElementVNode)("article", null, [
+const _hoisted_5 = /*#__PURE__*/ (0, _vue.createElementVNode)("article", {
+    class: "mb-6"
+}, [
     /*#__PURE__*/ (0, _vue.createElementVNode)("p", null, "Explore some of my recent projects to get a taste of what I can create:")
 ], -1 /* HOISTED */ );
 const _hoisted_6 = {
-    class: "grid grid-cols-8 gap-8 py-6"
+    class: "grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 p-4 pe-8"
 };
 const _hoisted_7 = {
-    class: "slice-layer px-5 py-3"
+    class: "col-span-1 md:col-span-1"
 };
 const _hoisted_8 = {
+    class: "slice-layer px-5 py-3"
+};
+const _hoisted_9 = {
     class: "w-12 h-12 rounded-lg mb-3 overflow-hidden"
 };
-const _hoisted_9 = [
+const _hoisted_10 = [
     "src"
 ];
-const _hoisted_10 = [
+const _hoisted_11 = [
     "innerHTML"
 ];
-const _hoisted_11 = {
+const _hoisted_12 = {
     class: "text-sm mb-2 ps-3"
 };
-const _hoisted_12 = /*#__PURE__*/ (0, _vue.createElementVNode)("h5", {
+const _hoisted_13 = /*#__PURE__*/ (0, _vue.createElementVNode)("h5", {
     class: "font-ops"
 }, "Technologies", -1 /* HOISTED */ );
-const _hoisted_13 = {
+const _hoisted_14 = {
     class: "text-sm ps-3 mb-3"
 };
-const _hoisted_14 = [
+const _hoisted_15 = [
     "href"
 ];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -12485,27 +12609,22 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
                 _hoisted_5,
                 (0, _vue.createElementVNode)("div", _hoisted_6, [
                     ((0, _vue.openBlock)(true), (0, _vue.createElementBlock)((0, _vue.Fragment), null, (0, _vue.renderList)(_ctx.data, (item)=>{
-                        return (0, _vue.openBlock)(), (0, _vue.createElementBlock)("div", {
-                            class: (0, _vue.normalizeClass)([
-                                _ctx.getRandomSpan(),
-                                ""
-                            ])
-                        }, [
-                            (0, _vue.createElementVNode)("div", _hoisted_7, [
-                                (0, _vue.createElementVNode)("div", _hoisted_8, [
+                        return (0, _vue.openBlock)(), (0, _vue.createElementBlock)("div", _hoisted_7, [
+                            (0, _vue.createElementVNode)("div", _hoisted_8, [
+                                (0, _vue.createElementVNode)("div", _hoisted_9, [
                                     (0, _vue.createElementVNode)("img", {
                                         class: "w-full h-full object-cover",
                                         src: item.img,
                                         alt: "Project Picture"
-                                    }, null, 8 /* PROPS */ , _hoisted_9)
+                                    }, null, 8 /* PROPS */ , _hoisted_10)
                                 ]),
                                 (0, _vue.createElementVNode)("h4", {
                                     class: "font-ops text-lg",
                                     innerHTML: item.title
-                                }, null, 8 /* PROPS */ , _hoisted_10),
-                                (0, _vue.createElementVNode)("p", _hoisted_11, (0, _vue.toDisplayString)(item.description), 1 /* TEXT */ ),
-                                _hoisted_12,
-                                (0, _vue.createElementVNode)("p", _hoisted_13, [
+                                }, null, 8 /* PROPS */ , _hoisted_11),
+                                (0, _vue.createElementVNode)("p", _hoisted_12, (0, _vue.toDisplayString)(item.description), 1 /* TEXT */ ),
+                                _hoisted_13,
+                                (0, _vue.createElementVNode)("p", _hoisted_14, [
                                     ((0, _vue.openBlock)(true), (0, _vue.createElementBlock)((0, _vue.Fragment), null, (0, _vue.renderList)(item.technologies, (tech, x)=>{
                                         return (0, _vue.openBlock)(), (0, _vue.createElementBlock)((0, _vue.Fragment), null, [
                                             (0, _vue.createElementVNode)("span", null, (0, _vue.toDisplayString)(tech), 1 /* TEXT */ ),
@@ -12522,9 +12641,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
                                     class: "font-ops hover:scale-105 hover:text-blue-500",
                                     href: item.url,
                                     target: "_blank"
-                                }, "Visit Website", 8 /* PROPS */ , _hoisted_14)) : (0, _vue.createCommentVNode)("v-if", true)
+                                }, "Visit Website", 8 /* PROPS */ , _hoisted_15)) : (0, _vue.createCommentVNode)("v-if", true)
                             ])
-                        ], 2 /* CLASS */ );
+                        ]);
                     }), 256 /* UNKEYED_FRAGMENT */ ))
                 ])
             ])
@@ -12565,7 +12684,23 @@ if (module.hot) {
 }
 exports.default = script;
 
-},{"afafb07b3ec30efe":"jL5nd","ab5e73497f3d01e0":"1kmvT","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","7a1ade95d9769bc0":"dpwvo"}],"jL5nd":[function(require,module,exports) {
+},{"7a1ade95d9769bc0":"dpwvo","afafb07b3ec30efe":"jL5nd","ab5e73497f3d01e0":"1kmvT","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dpwvo":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+exports.default = {
+    props: {
+        data: {
+            type: [
+                String,
+                Array,
+                Object
+            ],
+            required: true
+        }
+    }
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jL5nd":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "render", ()=>render);
@@ -12651,134 +12786,7 @@ parcelHelpers.defineInteropFlag(exports);
 let NOOP = ()=>{};
 exports.default = (script)=>{};
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dpwvo":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-exports.default = {
-    props: {
-        data: {
-            type: [
-                String,
-                Array,
-                Object
-            ],
-            required: true
-        }
-    }
-};
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lQBf8":[function(require,module,exports) {
-module.exports = JSON.parse('[{"label":"Email","link":"mailto:durianbohong@gmail.com","icon":"fas fa-envelope"},{"label":"Github","link":"https://github.com/il4mb","icon":"fab fa-github"},{"label":"LinkedIn","link":"https://www.linkedin.com/in/il4mb/","icon":"fab fa-linkedin"},{"label":"Instagram","link":"https://www.instagram.com/______ilham_b/","icon":"fab fa-instagram"}]');
-
-},{}],"cEVhq":[function(require,module,exports) {
-module.exports = JSON.parse('{"Name":"Ilham B","Location":"Pekanbaru, Indonesia","Status":"Not Graduated","Occupation":"Student and Full-Stack Software Engineer","Education":[{"University":"STMIK AMIK RIAU","Major":"Technical Informatics (Undergraduate)"}],"About Me":"I am a student and a full-stack software engineer based in Pekanbaru, Indonesia. I am currently working as a student at STMIK AMIK RIAU. My hobbies include listening to music. If coding could be a hobby, it would be my favorite because I spend most of my time on my computer."}');
-
-},{}],"39VMH":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _0Jpg = require("../assets/images/0.jpg");
-var _0JpgDefault = parcelHelpers.interopDefault(_0Jpg);
-var _1Jpg = require("../assets/images/1.jpg");
-var _1JpgDefault = parcelHelpers.interopDefault(_1Jpg);
-var _2Jpg = require("../assets/images/2.jpg");
-var _2JpgDefault = parcelHelpers.interopDefault(_2Jpg);
-var _3Jpg = require("../assets/images/3.jpg");
-var _3JpgDefault = parcelHelpers.interopDefault(_3Jpg);
-var _4Jpg = require("../assets/images/4.jpg");
-var _4JpgDefault = parcelHelpers.interopDefault(_4Jpg);
-var _5Jpg = require("../assets/images/5.jpg");
-var _5JpgDefault = parcelHelpers.interopDefault(_5Jpg);
-var _6Jpg = require("../assets/images/6.jpg");
-var _6JpgDefault = parcelHelpers.interopDefault(_6Jpg);
-var _70Jpg = require("../assets/images/7.0.jpg");
-var _70JpgDefault = parcelHelpers.interopDefault(_70Jpg);
-var _71Jpg = require("../assets/images/7.1.jpg");
-var _71JpgDefault = parcelHelpers.interopDefault(_71Jpg);
-exports.default = [
-    {
-        file: (0, _0JpgDefault.default),
-        caption: "It's me when i was kid with my nephew",
-        location: "Monas Monument National Jakarta, Indonesia",
-        time: "2012"
-    },
-    {
-        file: (0, _1JpgDefault.default),
-        caption: "It's me when i was kid with my nephew",
-        location: "Monas Monument National Jakarta, Indonesia",
-        time: "2012"
-    },
-    {
-        file: (0, _2JpgDefault.default),
-        caption: "It's me when i was kid with my nephew",
-        location: "Monas Monument National Jakarta, Indonesia",
-        time: "2012"
-    },
-    {
-        file: (0, _3JpgDefault.default),
-        caption: "It's me when i was kid with my nephew",
-        location: "Monas Monument National Jakarta, Indonesia",
-        time: "2012"
-    },
-    {
-        file: (0, _4JpgDefault.default),
-        caption: "It's me when i was kid with my nephew",
-        location: "Monas Monument National Jakarta, Indonesia",
-        time: "2012"
-    },
-    {
-        file: (0, _5JpgDefault.default),
-        caption: "It's me when i was kid with my nephew",
-        location: "Monas Monument National Jakarta, Indonesia",
-        time: "2012"
-    },
-    {
-        file: (0, _6JpgDefault.default),
-        caption: "It's me when i was kid with my nephew",
-        location: "Monas Monument National Jakarta, Indonesia",
-        time: "2012"
-    },
-    {
-        file: (0, _70JpgDefault.default),
-        caption: "It's me when i was kid with my nephew",
-        location: "Monas Monument National Jakarta, Indonesia",
-        time: "2012"
-    },
-    {
-        file: (0, _71JpgDefault.default),
-        caption: "It's me when i was kid with my nephew",
-        location: "Monas Monument National Jakarta, Indonesia",
-        time: "2012"
-    }
-];
-
-},{"../assets/images/0.jpg":"gdrXt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../assets/images/1.jpg":"56LNR","../assets/images/2.jpg":"iQAqT","../assets/images/3.jpg":"iMcmU","../assets/images/4.jpg":"iQB3K","../assets/images/5.jpg":"eB4Lb","../assets/images/6.jpg":"3OuLs","../assets/images/7.0.jpg":"9WIwK","../assets/images/7.1.jpg":"gUoVa"}],"gdrXt":[function(require,module,exports) {
-module.exports = require("ab7ddb1ee9aaea46").getBundleURL("aNMIV") + "0.c53d37d5.jpg" + "?" + Date.now();
-
-},{"ab7ddb1ee9aaea46":"lgJ39"}],"56LNR":[function(require,module,exports) {
-module.exports = require("29bb447600057134").getBundleURL("aNMIV") + "1.fae19a87.jpg" + "?" + Date.now();
-
-},{"29bb447600057134":"lgJ39"}],"iQAqT":[function(require,module,exports) {
-module.exports = require("8470ee3b84158d").getBundleURL("aNMIV") + "2.3f3f5046.jpg" + "?" + Date.now();
-
-},{"8470ee3b84158d":"lgJ39"}],"iMcmU":[function(require,module,exports) {
-module.exports = require("472b09aa989d053a").getBundleURL("aNMIV") + "3.e813a57f.jpg" + "?" + Date.now();
-
-},{"472b09aa989d053a":"lgJ39"}],"iQB3K":[function(require,module,exports) {
-module.exports = require("d1484c4871e4d3c2").getBundleURL("aNMIV") + "4.5afbb2d4.jpg" + "?" + Date.now();
-
-},{"d1484c4871e4d3c2":"lgJ39"}],"eB4Lb":[function(require,module,exports) {
-module.exports = require("10114e8e10e57c22").getBundleURL("aNMIV") + "5.e32e3c64.jpg" + "?" + Date.now();
-
-},{"10114e8e10e57c22":"lgJ39"}],"3OuLs":[function(require,module,exports) {
-module.exports = require("b52a92b22c7c350d").getBundleURL("aNMIV") + "6.d3460c7f.jpg" + "?" + Date.now();
-
-},{"b52a92b22c7c350d":"lgJ39"}],"9WIwK":[function(require,module,exports) {
-module.exports = require("396da4ea0b92784f").getBundleURL("aNMIV") + "7.0.addff7b7.jpg" + "?" + Date.now();
-
-},{"396da4ea0b92784f":"lgJ39"}],"gUoVa":[function(require,module,exports) {
-module.exports = require("3901c98523c26e07").getBundleURL("aNMIV") + "7.1.e7e6c735.jpg" + "?" + Date.now();
-
-},{"3901c98523c26e07":"lgJ39"}],"fYNyc":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fYNyc":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 let script;
@@ -12811,6 +12819,21 @@ var _navProgressVue = require("./views/components/NavProgress.vue");
 var _navProgressVueDefault = parcelHelpers.interopDefault(_navProgressVue);
 var _vue = require("vue");
 exports.default = (0, _vue.defineComponent)({
+    data () {
+        return {
+            items: [],
+            leaveAnimationClass: "animate__animated animate__slideOutDown",
+            enterAnimationClass: "animate__animated animate__slideOutUp"
+        };
+    },
+    created () {
+        this.$router.options.routes.forEach((route)=>{
+            this.items.push({
+                name: route.name,
+                path: route.path
+            });
+        });
+    },
     setup () {
         const define = {
             name: "ilham B",
@@ -12828,6 +12851,21 @@ exports.default = (0, _vue.defineComponent)({
     components: {
         ModSwitch: (0, _themeModeSwitchVueDefault.default),
         NavProgress: (0, _navProgressVueDefault.default)
+    },
+    watch: {
+        $route (to, from) {
+            const xFrom = this.items.find((x)=>x.path == from.path);
+            const xTo = this.items.find((x)=>x.path == to.path);
+            const ixf = this.items.indexOf(xFrom);
+            const ixt = this.items.indexOf(xTo);
+            if (ixf < ixt) {
+                this.leaveAnimationClass = "animate__animated animate__bounceOutUp";
+                this.enterAnimationClass = "animate__animated animate__bounceInUp";
+            } else {
+                this.leaveAnimationClass = "animate__animated animate__bounceOutDown";
+                this.enterAnimationClass = "animate__animated animate__bounceInDown";
+            }
+        }
     }
 });
 
@@ -13062,8 +13100,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
         (0, _vue.createVNode)(_component_router_view, null, {
             default: (0, _vue.withCtx)(({ Component, route })=>[
                     (0, _vue.createVNode)((0, _vue.Transition), {
-                        "enter-active-class": "animate__animated animate__slideOutUp",
-                        "leave-active-class": "animate__animated animate__slideOutDown"
+                        "enter-active-class": _ctx.enterAnimationClass,
+                        "leave-active-class": _ctx.leaveAnimationClass,
+                        mode: "out-in"
                     }, {
                         default: (0, _vue.withCtx)(()=>[
                                 ((0, _vue.openBlock)(), (0, _vue.createElementBlock)("main", {
@@ -13078,7 +13117,10 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
                                 ]))
                             ]),
                         _: 2 /* DYNAMIC */ 
-                    }, 1024 /* DYNAMIC_SLOTS */ )
+                    }, 1032 /* PROPS, DYNAMIC_SLOTS */ , [
+                        "enter-active-class",
+                        "leave-active-class"
+                    ])
                 ]),
             _: 1 /* STABLE */ 
         })
