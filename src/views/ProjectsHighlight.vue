@@ -6,13 +6,13 @@
             </header>
 
             <div class="px-3">
-                <article>
+                <article class="mb-6">
                     <p>Explore some of my recent projects to get a taste of what I can create:</p>
                 </article>
 
-                <div class="grid grid-cols-8 gap-8 py-6">
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 p-4 pe-8">
 
-                    <div v-for="item in data" :class="getRandomSpan()" class="">
+                    <div v-for="item in data" class="col-span-1 md:col-span-1">
 
                         <div class="slice-layer px-5 py-3">
 
@@ -61,7 +61,7 @@ export default defineComponent({
 
         getRandomSpan() {
             const random = this.randomNumber(3, 4);
-            return `col-${random} `;
+            return `col-${random}`;
         }
     }
 })
