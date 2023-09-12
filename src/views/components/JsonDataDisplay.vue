@@ -22,7 +22,7 @@
             <JsonDataDisplay :data="value" />
         </template>
         <template v-else>
-            <span class="px-3 inline-block">{{ value }}<span v-if="x < data.length - 1">, </span></span>
+            <span class="px-3 inline-block"><span class="hover:text-orange-400">{{ value }}</span><span v-if="x < data.length - 1">, </span></span>
         </template>
     </template>
 </template>

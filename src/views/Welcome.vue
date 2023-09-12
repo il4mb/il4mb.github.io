@@ -43,5 +43,9 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
 
+    props: {
+        define: Object
+    },
+
 })
 </script>

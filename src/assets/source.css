@@ -2,6 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
+.col-1 {
+    @apply col-span-1;
+}
+.col-2 {
+    @apply col-span-2;
+}
+.col-3 {
+    @apply col-span-3;
+}
+.col-4 {
+    @apply col-span-4;
+}
+.col-5 {
+    @apply col-span-5;
+}
+.col-6 {
+    @apply col-span-6;
+}
+.col-7 {
+    @apply col-span-7;
+}
+.col-8 {
+    @apply col-span-8;
+}
+
+.row-1 {
+    @apply row-span-1;
+}
+.row-2 {
+    @apply row-span-2;
+}
+.row-3 {
+    @apply row-span-3;
+}
+.row-4 {
+    @apply row-span-4;
+}
+.row-5 {
+    @apply row-span-5;
+}
+.row-6 {
+    @apply row-span-6;
+}/*
+.row-7 {
+    @apply row-span-7;
+}
+.row-8 {
+    @apply row-span-8;
+} */
+
 :root {
     --object-open-bracket: url("data:image/svg+xml,%3Csvg viewBox='0 0 4.238 11.963' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m1.114 6.063v-0.163c1.005-0.102 1.497-0.615 1.497-1.6v-1.797c0-1.094 0.39-1.538 1.354-1.538h0.273v-0.965h-0.376c-1.612 0-2.372 0.759-2.372 2.352v1.524c0 1.094-0.376 1.456-1.49 1.456v1.299c1.114 0 1.49 0.362 1.49 1.456v1.524c0 1.593 0.759 2.352 2.372 2.352h0.376v-0.964h-0.273c-0.964 0-1.354-0.444-1.354-1.538v-1.798c0-0.984-0.492-1.497-1.497-1.6z'/%3E%3C/svg%3E%0A");
     --object-close-bracket: url("data:image/svg+xml,%3Csvg viewBox='0 0 4.238 11.963' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m3.124 5.9v0.163c-1.005 0.103-1.497 0.616-1.497 1.6v1.798c0 1.094-0.39 1.538-1.354 1.538h-0.273v0.964h0.376c1.613 0 2.372-0.759 2.372-2.352v-1.524c0-1.094 0.376-1.456 1.49-1.456v-1.299c-1.114 0-1.49-0.362-1.49-1.456v-1.524c0-1.593-0.76-2.352-2.372-2.352h-0.376v0.964h0.273c0.964 0 1.354 0.444 1.354 1.538v1.798c0 0.984 0.492 1.497 1.497 1.6z'/%3E%3C/svg%3E%0A");
@@ -82,7 +132,7 @@ html {
 }
 
 ul.navprogress {
-    @apply fixed z-50 top-0 right-0 h-full mt-[70px] text-right md:right-4 lg:right-8;
+    @apply fixed z-50 top-0 right-3 h-full mt-[70px] text-right md:right-5 lg:right-8;
 }
 ul.navprogress li a {
     @apply flex items-center justify-end;
@@ -98,14 +148,18 @@ ul.navprogress li:hover span {
 }
 
 .scrollable {
-    @apply overflow-y-auto w-full h-full flex items-center;
+    @apply overflow-y-auto w-full h-full py-14 flex items-start;
     scrollbar-width: thin;
     scrollbar-color: rgb(33, 33, 37) transparent;
 }
 
+.scrollable section {
+    @apply max-w-[1200px] mx-auto py-4 md:py-8;
+}
+
 /* Works on Chrome, Edge, and Safari */
 .scrollable::-webkit-scrollbar {
-    width: 12px;
+    @apply w-0.5 md:w-2;
 }
 
 .scrollable::-webkit-scrollbar-track {
@@ -113,7 +167,7 @@ ul.navprogress li:hover span {
 }
 
 .scrollable::-webkit-scrollbar-thumb {
-   @apply bg-slate-800 rounded-full shadow-[0_0_4px_#888] dark:bg-slate-100;
+    @apply bg-slate-800 rounded-full shadow-[0_0_4px_#888] dark:bg-slate-100;
 }
 
 /*
