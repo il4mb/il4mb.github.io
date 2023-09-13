@@ -29,13 +29,17 @@
                         <figcaption class="font-ops">ilham b</figcaption>
                     </figure>
 
-                    <div class="mb-8">
+                    <div class="mb-9">
                         <router-link to="/about-me" class="block text-base font-ops hover:text-blue-500">
                             About Me
                         </router-link>
                         <router-link to="/projects-highlight" class="block text-base font-ops hover:text-blue-500">
                             My Project Highlight
                         </router-link>
+                        <router-link to="/contact-me" class="block text-base font-ops hover:text-blue-500">
+                            Contact Me
+                        </router-link>
+
                     </div>
 
                     <div>

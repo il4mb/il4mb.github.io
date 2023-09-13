@@ -5,7 +5,7 @@
                 <header class="mb-8">
                     <h2 class="text-3xl font-bold font-ops">About Me</h2>
                 </header>
-                <article class="bg-slate-200 dark:bg-slate-600 text-slate-600 dark:text-slate-200 p-5 rounded-lg">
+                <article class="bg-slate-200 dark:bg-slate-600 text-slate-600 dark:text-slate-200 p-5 rounded-lg overflow-x-auto w-full">
                     <JsonDataDisplay :data="data"></JsonDataDisplay>
                 </article>
             </section>
